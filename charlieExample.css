@@ -32,6 +32,8 @@ color: white;
     border-radius: 10px;
     border-color: white;
     margin: auto;
+}
 
-
+*, *::before, *::after {
+  box-sizing: border-box;
 }
