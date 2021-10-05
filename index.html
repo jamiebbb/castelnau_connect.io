@@ -25,13 +25,19 @@
 
 </head>
 
-
+<!-- color: rgb(219, 188, 188);--> - nice light red colour
 
 <body>
+    <!-- heading for page-->
+<div class="wrap">
+  <h1>Data<span style="color: #e6224b">Science</span></h1>
+  <span style="display:block; height: 10px;"></span>
+  <p id="rubric" class="rubric">My Data Science portfolio using data from: <a class="darkButton" href="https://www.coinapi.io/">CoinAPI</a></p>
+  <span style="display:block; height: 10px;"></span>
+</div>
+ 
 
-    <h1>Data Science 2021.</h1>
-
-    <h3>Covid-19</h3>
+    <h3>Covid-19<span style="colour: rgb(219, 188, 188)"></h3>
 
     <p>The first chart tracks Covid-19 cases by UK region.</p>
 
@@ -82,7 +88,18 @@
     vegaEmbed('#fourthChart', myChart1);
   </script>
 </div>
-    
+
+<!-- START - Grid of divs that will house the charts-->
+
+<div class="grid_items">
+  <div class="grid_item" id="chart1"></div>
+  <div class="grid_item" id="chart2"></div>
+  <div class="grid_item" id="chart3"></div>
+  <div class="grid_item" id="chart4"></div>
+
+</div>
+        
+        
 </body>
 
 
