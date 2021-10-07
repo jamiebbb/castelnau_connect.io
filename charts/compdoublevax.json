@@ -1,4 +1,3 @@
-
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     
@@ -16,16 +15,12 @@
       "format": {"type": "csv"}
     },
   
-     "transform":[
-        
+     "transform":[      
         {"filter": {
           "field": "areaName", 
           "oneOf": ["United Kingdom"]}
           }
-  
-  
       ],
-    
     
     "height": 300,
     "width": 310,
