@@ -1,0 +1,54 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    
+    "title": {
+      "text": "Total Number of Completed Double Vaccinations",
+      "subtitle":"in the UK",
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":10,
+      "anchor": "start",
+      "color": "black"
+    },
+    
+     "data": {
+      "url": "https://raw.githubusercontent.com/jamiebbb/jamiebbb.github.io/main/cumvax.csv",
+      "format": {"type": "csv"}
+    },
+  
+     "transform":[      
+        {"filter": {
+          "field": "areaName", 
+          "oneOf": ["United Kingdom"]}
+          }
+      ],
+    
+    "height": 300,
+    "width": 310,
+     
+    "mark": {"type": "line", "point": false},
+   
+    "encoding": {
+  
+      "x": {
+        "field": "date",
+        "type": "temporal",
+        "title": null,
+        "axis": {"grid": false}
+      },
+  
+      "y": {
+        "field": "cumPeopleVaccinatedCompleteByPublishDate",
+        "type": "quantitative",
+        "title": null,
+        "axis": {"grid": false}
+      },
+
+  
+      "color": {
+        "field": "areaName",
+        "type": "nominal",
+        "scale": {"scheme": "set1"}        
+        
+      }
+  }
+}
