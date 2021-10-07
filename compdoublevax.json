@@ -27,6 +27,8 @@
      
     "mark": {"type": "line", "point": false},
    
+
+   
     "encoding": {
   
       "x": {
@@ -45,10 +47,11 @@
 
   
       "color": {
-        "field": "areaName",
+        "field": "",
         "type": "nominal",
         "scale": {"scheme": "set1"}        
         
       }
+
   }
 }
