@@ -1,25 +1,170 @@
-
-
-
-
 /* This is my first proper css file */
 
+@import url("https://fonts.googleapis.com/css2?family=Poppinswght@300&family=Poppins:wght@600");
+
+
 body{
-    background-color: rgb(233, 233, 233);
+
+    background-color: #e6f202 ;
+    max-width: 90%;
+    margin: auto;
+    
+  animation: fadeIn ease 3s;
+  -webkit-animation: fadeIn ease 3s;
+  -moz-animation: fadeIn ease 3s;
+  -o-animation: fadeIn ease 3s;
+  -ms-animation: fadeIn ease 3s;
 }
 
-h1, h3, p{
-    color:rgb(17, 17, 17);
-    font-family: 'Roboto', sans-serif;
+.bodyText {
+  color: white;
+  margin-bottom: -22px;
+  margin-top: 50px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 21px;
+  font-weight: lighter;
+  text-align: center;
 }
+
+/* Flexbox containing home page graphs */
+container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 30px 30px;
+    margin-top: 30px;
+}
+
+
+
+/* Data Science Title */
+h1 {
+    color: rgb(190, 0, 0);
+    font-size: 45px;
+    margin-top: 10px;
+    text-align: left;
+    font-weight: bold;
+}
+
+/* Name and */
+h2 {
+    color: white;
+    font-weight: lighter;
+    font-size: 25px;
+    margin-top: -35px;
+    text-align: left;
+}
+
+header {
+    border: 3px solid white;
+    font-family: 'Poppins', sans-serif;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-bottom: 30px;
+}
+
+.blue {
+    color: rgb(17, 143, 242);
+}
+
+.white {
+    color: white
+}
+
 
 .chart{
     background-color: white;
-    width:330px;
-    border-width: 10px;
     border-style: solid;
-    border-radius: 5px;
     border-color: white;
+    border-width: 4px;
+    border-radius: 25px;
+    text-align: center;
+    padding: 20px;
+    transition: padding 500ms, border-radius 500ms;
 }
 
+.chart:hover {
+    border-color: rgb(224, 70, 8);
+    padding: 35px;
+    border-radius: 5px;
+}
+
+footer {
+    height: 100px;
+}
+
+
+/* Buttons on navigation bar */
+
+:root {
+    --border-size: 0.125rem;
+    --duration: 250ms;
+    --ease: cubic-bezier(0.215, 0.61, 0.355, 1);
+    --font-family: monospace;
+    --color-primary: white;
+    --color-secondary: black;
+    --color-tertiary: dodgerblue;
+    --shadow: rgba(0, 0, 0, 0.1);
+    --space: 1rem;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+
+  .multi-button {
+    display: flex;
+    width: 100%;
+    box-shadow: var(--shadow) 4px 4px;
+  }
+  
+  .multi-button button {
+    flex-grow: 1;
+    cursor: pointer;
+    position: relative;
+    padding:
+      calc(var(--space) / 1.125)
+      var(--space)
+      var(--space);
+    border: var(--border-size) solid black;
+    color: var(--color-secondary);
+    background-color: var(--color-primary);
+    font-size: 1.5rem;
+    font-family: var(--font-family);
+    text-transform: lowercase;
+    text-shadow: var(--shadow) 2px 2px;
+    transition: flex-grow var(--duration) var(--ease);
+  }
+  
+  .multi-button button + button {
+    border-left: var(--border-size) solid black;
+    margin-left: calc(var(--border-size) * -1);
+  }
+  
+  .multi-button button:hover,
+  .multi-button button:focus {
+    flex-grow: 2;
+    color: white;
+    outline: none;
+    text-shadow: none;
+    background-color: var(--color-secondary);
+  }
+  
+  .multi-button button:focus {
+    outline: var(--border-size) dashed var(--color-primary);
+    outline-offset: calc(var(--border-size) * -3);
+  }
+  
+  .multi-button:hover button:focus:not(:hover) {
+    flex-grow: 1;
+    color: var(--color-secondary);
+    background-color: var(--color-primary);
+    outline-color: var(--color-tertiary);
+  }
+  
+  .multi-button button:active {
+    transform: translateY(var(--border-size));
+  }
 
