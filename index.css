@@ -9,11 +9,11 @@ body{
     max-width: 90%;
     margin: auto;
     
-  animation: fadeIn ease 3s;
-  -webkit-animation: fadeIn ease 3s;
-  -moz-animation: fadeIn ease 3s;
-  -o-animation: fadeIn ease 3s;
-  -ms-animation: fadeIn ease 3s;
+  animation: fadeIn ease 2s;
+  -webkit-animation: fadeIn ease 2s;
+  -moz-animation: fadeIn ease 2s;
+  -o-animation: fadeIn ease 2s;
+  -ms-animation: fadeIn ease 2s;
 }
 
 .bodyText {
@@ -73,6 +73,17 @@ header {
     color: white
 }
 
+.bcontainer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;;
+  gap: 30px 30px;
+  margin-top: 30px;
+  border-style: solid;
+  border-color: white;
+  padding: 30px;
+  border-radius: 25px;
+}
 
 .chart{
     background-color: white;
