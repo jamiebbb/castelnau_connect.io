@@ -35,14 +35,14 @@
         "field": "date",
         "type": "temporal",
         "title": null,
-        "axis": {"grid": false}
+        "axis": {"grid": true}
       },
   
       "y": {
         "field": "cumPeopleVaccinatedCompleteByPublishDate",
         "type": "quantitative",
         "title": null,
-        "axis": {"grid": false}
+        "axis": {"grid": true}
       },
 
   
