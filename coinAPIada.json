@@ -44,8 +44,8 @@
       "field": "dateB",
       "type": "temporal",
       "axis": {
-        "title": null,
-        "grid": false,
+        "title": "Date",
+        "grid": true,
         "labelSeparation": 10,
         "xyzticks": false,
         "domainColor":"dimgrey",
@@ -59,7 +59,7 @@
       "type": "quantitative",
       "title": "",
       "axis": {
-        "grid": false,
+        "grid": true,
         "domainColor":"dimgrey",
         "labelColor":"#00a767",
         "tickColor":"pink",
