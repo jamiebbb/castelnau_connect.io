@@ -39,7 +39,7 @@
   <h1>Data<span style="color: #2400c7">Science</span></h1>
   <span style="display:block; height: 15px;"></span>
     <h2>By Jamie Broadhurst</h2>
-  <p id="rubric" class="rubric">My Data Science portfolio using data from: <a class="darkButton" href="https://www.coinapi.io/">CoinAPI</a></p>
+  <p id="rubric" class="rubric">My Data Science portfolio using data from: <a class="darkButton" href="https://www.coinapi.io/">CoinAPI</a>and <a class="darkButton" href="https://gov.uk"><UK Government</a></p>
   <span style="display:block; height: 10px;"></span>
 </div>
     </header>
@@ -52,6 +52,7 @@
   <button onclick="location.href='project_page.html'">Project</button>
   <button onclick="location.href='https://github.com/jamiebbb/jamiebbb.github.io'">Github</button>
   <button onclick="location.href='https://rapidcharts.io/datascience'">Course</button>
+  <button onclick="location.href='https://rapidcharts.io/library'">About Me</button>
 </div>
     
    
@@ -98,7 +99,8 @@
 <p class="bodyText"><span style="color: rgb(219, 188, 188); font-weight: 1000;">Week 2:</span> Embed two charts of your own design from a given API and your own data</p>
     
 <container class="bcontainer"> 
-    <!--Crypto Chart 2 using API-->
+    <h1> Fully vaccinated chart from given API</h1>
+    <!--Fully vax chart from given API-->
 <div class="chart" id="fourthChart">
   <script>
     var myChart1 = "fullyvaxperc.json";
@@ -119,19 +121,50 @@
     <!-- End container 2-->
     
     <!-- Start container 3 with week 3 work-->
-<p class="bodyText"><span style="color: rgb(219, 188, 188); font-weight: 1000;">Week 3:</span> API Driven Charts - Two charts from an API I have found and gained access to</p>
+<p class="bodyText"><span style="color: rgb(219, 188, 188); font-weight: 1000;">Week 3:</span> JSON Charts - Editing data, writing JSON by hand</p>
 <container class="bcontainer"> 
-    <!--Crypto Chart 2 using API-->
+    
+    <!--Editing JSON chart-->
 <div class="chart" id="sixthChart">
   <script>
-    var myChart1 = "coinAPIada.json";
+    var myChart1 = ".json";
     vegaEmbed('#sixthChart', myChart1);
+  </script>
+</div>
+    
+        <!--Writing my own JSON chart-->
+    <div class="chart" id="seventhChart">
+  <script>
+    var myChart1 = ".json";
+    vegaEmbed('#seventhChart', myChart1);
   </script>
 </div>
     
 </container>
     
-    <!-- End container 3-->
+    
+    <!-- Start container 4 with week 4 work-->
+<p class="bodyText"><span style="color: rgb(219, 188, 188); font-weight: 1000;">Week 4:</span> API Driven Charts - Two charts from an API I have found and gained access to</p>
+<container class="bcontainer"> 
+    <!--Crypto Chart using coinAPI-->
+<div class="chart" id="eighthChart">
+  <script>
+    var myChart1 = "coinAPIada.json";
+    vegaEmbed('#eighthChart', myChart1);
+  </script>
+</div>
+    
+        <!--Crypto Chart using nomicsAPI-->
+    <div class="chart" id="ninthChart">
+  <script>
+    var myChart1 = ".json";
+    vegaEmbed('#ninthChart', myChart1);
+  </script>
+</div>
+    
+</container>
+    
+    <!-- End container 4-->
     
  <!--Footer, buffer at the bottom of the page-->
 <footer>
