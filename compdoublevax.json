@@ -1,57 +1,81 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    
-    "title": {
-      "text": "Total Number of Completed Double Vaccinations",
-      "subtitle":"in the UK",
-      "subtitleFontStyle":"italic",
-      "subtitleFontSize":10,
-      "anchor": "start",
-      "color": "black"
-    },
-    
-     "data": {
-      "url": "https://raw.githubusercontent.com/jamiebbb/jamiebbb.github.io/main/cumvax.csv",
-      "format": {"type": "csv"}
-    },
-  
-     "transform":[      
-        {"filter": {
-          "field": "areaName", 
-          "oneOf": ["United Kingdom"]}
-          }
-      ],
-    
-    "height": 300,
-    "width": 310,
-     
-    "mark": {"type": "line", "point": false},
-   
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 
-   
-    "encoding": {
-  
+
+ "title": {
+  "text": "Admissions vs Cumulative People Vaccinated",
+  "subtitle":"No data for total admissions on 3rd, 4th and 5th of Oct",
+  "subtitleFontStyle":"italic",
+  "subtitleFontSize":10,
+  "anchor": "start"},
+
+  "width":260,
+  "height":300,
+
+
+  "data": {
+    "name":"myData",
+    "url": "https://raw.githubusercontent.com/jamiebbb/jamiebbb.github.io/main/cumvax.csv"},
+
+
+  "encoding": {     
       "x": {
         "field": "date",
-        "type": "temporal",
-        "title": null,
-        "axis": {"grid": true}
-      },
-  
-      "y": {
-        "field": "cumPeopleVaccinatedCompleteByPublishDate",
-        "type": "quantitative",
-        "title": null,
-        "axis": {"grid": true}
+        "title":null,
+        "type": "temporal"}
+        },
+          
+   "layer":[
+
+      {"mark": {
+          "type": "line",
+          "point": false,
+          "strokeWidth":1,
+          "width":1
+        },
+
+      "encoding": {
+          "y": {
+          "field": "cumAdmissions",
+          "type": "quantitative",
+          "title": "",
+          "axis": {
+            "grid": false,            
+            "labelColor":"blue"}      
+            },
+            
+          "color": {
+            "datum": "Total Admissions",
+            "scale": {"range": ["blue", "red"]},
+            "legend":{
+              "orient": "top-left"}}}
       },
 
-  
-      "color": {
-        "field": "",
-        "type": "nominal",
-        "scale": {"scheme": "set1"}        
+     {"mark": {
+          "type": "line",
+          "point": false,
+          "strokeWidth":1
+        },
+
+      "encoding": {
+          "y": {
+          "field": "cumPeopleVaccinatedCompleteByPublishDate",
+          "type": "quantitative",
+          "title": "",
+          "axis": {
+            "grid": false,
+            "labelColor":"red"}
+            },
+            
+          "color": {
+            "datum": "Cumulative People Vaccinated",
+            "scale": {"range": ["orange", "hotpink"]},
+            "legend":{
+              "orient": "top-left"}}
         
-      }
+        } 
+    }
+],
 
-  }
+    "resolve": {"scale": {"y": "independent"}} 
 }
