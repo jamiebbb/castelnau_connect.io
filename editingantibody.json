@@ -6,7 +6,7 @@
     "color": "black"
   },
   "height": 300,
-  "width": 500,
+  "width": 280,
   "data": {
     "url": "https://raw.githubusercontent.com/jamiebbb/jamiebbb.github.io/main/cumantibodytests.csv",
     "format": {"type": "csv"}
