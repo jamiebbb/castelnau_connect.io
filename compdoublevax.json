@@ -41,7 +41,7 @@
           "title": "",
           "axis": {
             "grid": false,            
-            "labelColor":"blue"}      
+            "labelColor":"black"}      
             },
             
           "color": {
@@ -64,7 +64,7 @@
           "title": "",
           "axis": {
             "grid": false,
-            "labelColor":"red"}
+            "labelColor":"black"}
             },
             
           "color": {
