@@ -6,8 +6,8 @@
     "anchor": "start",
     "color": "black"
   },
-  "height": 300,
-  "width": 200,
+  "height": 310,
+  "width": 300,
   "data": {
     "values": [
       {"date": "2020-05-31", "tests": 127351}, {"date": "2020-09-15", "tests": 2076840},
