@@ -3,8 +3,8 @@
 
 
  "title": {
-  "text": "Admissions vs Cumulative People Vaccinated",
-  "subtitle":"No data for total admissions on 3rd, 4th and 5th of Oct",
+  "text": "Admissions to Hospital vs Cumulative People Vaccinated",
+  "subtitle":"Data from my own CSV file",
   "subtitleFontStyle":"italic",
   "subtitleFontSize":10,
   "anchor": "start"},
