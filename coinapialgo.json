@@ -1,11 +1,11 @@
-  {
+{
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 
   "description": "",
 
    "title": {
-    "text": "Algorand",
-    "subtitle":"Weekly average price. Source: coinapi.io",
+    "text": "Algorand: 10DAY Average Price",
+    "subtitle":"From July-19. Source: coinapi.io",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "start",
@@ -19,7 +19,7 @@
  
   
   "data": {
-    "url": "https://rest.coinapi.io/v1/exchangerate/ALGO/USD/history?apikey=AAB3A57B-7D91-4EA7-9C8C-6211E2F7CEDF&period_id=7DAY&time_start=2019-07-01T00:00:00&time_end=2022-02-01T00:00:00&limit=100",
+    "url": "https://rest.coinapi.io/v1/exchangerate/ALGO/USD/history?apikey=AAB3A57B-7D91-4EA7-9C8C-6211E2F7CEDF&period_id=10DAY&time_start=2019-07-01T00:00:00&time_end=2022-02-01T00:00:00&limit=100",
     "format": {"type": "json"}},
   
 
@@ -34,20 +34,14 @@
     "color":"#f46e45"
   },
 
-  "transform": [
-    {"calculate":"slice(datum.time_period_end,0,10)", "as": "dateA"},
-    {"calculate": "timeParse(datum.dateA , '%Y-%m-%d')", "as": "dateB"}
-  ],
-
   "encoding": {
     "x": {
-      "field": "dateB",
+      "field": "time_period_end",
       "type": "temporal",
       "axis": {
         "title": "Date",
         "grid": true,
         "labelSeparation": 10,
-        "xyzticks": false,
         "domainColor":"dimgrey",
         "labelColor":"#1f00a7",
         "tickColor":"black",
