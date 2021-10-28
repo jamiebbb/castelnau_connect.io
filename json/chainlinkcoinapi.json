@@ -1,0 +1,64 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+  "description": "",
+
+   "title": {
+    "text": "CHAINLINK: 7-DAY Average Price",
+    "subtitle":"From April-20. Source: coinapi.io",
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "start",
+    "color": "#000000",
+    "subtitleColor":"#a0db17"},
+
+  "config": {
+    "background":"#ffffff",
+    "view": {
+      "stroke": "transparent"}},
+ 
+  
+  "data": {
+    "url": "https://raw.githubusercontent.com/jamiebbb/jamiebbb.github.io/main/data/data_coinAPI-LINK.json",
+    "format": {"type": "json"}},
+  
+
+  "height": 300,
+  "width": 280,
+  
+
+  "mark": {
+    "type": "line",
+    "point": false,
+    "interpolate": "linear",
+    "color":"#f46e45"
+  },
+
+  "encoding": {
+    "x": {
+      "field": "time_period_end",
+      "type": "temporal",
+      "axis": {
+        "title": "Date",
+        "grid": true,
+        "labelSeparation": 10,
+        "domainColor":"dimgrey",
+        "labelColor":"#1f00a7",
+        "tickColor":"black",
+        "gridColor":"dimgrey"
+      }},
+
+    "y": {
+      "field": "rate_low",
+      "type": "quantitative",
+      "title": "",
+      "axis": {
+        "grid": true,
+        "domainColor":"dimgrey",
+        "labelColor":"#1f00a7",
+        "tickColor":"black",
+        "gridColor":"dimgrey",
+        "format":"$,.5"}
+        }
+     }
+}
