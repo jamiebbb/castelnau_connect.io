@@ -36,8 +36,6 @@ container {
     margin-top: 30px;
 }
 
-
-
 /* Data Science Title */
 h1 {
     color: rgb(190, 0, 0);
@@ -96,9 +94,22 @@ header {
     transition: padding 500ms, border-radius 500ms;
 }
 
+#firstchart{
+  background-color: white;
+  border-style: solid;
+  border-color: white;
+  border-width: 2px;
+  border-radius: 25px;
+  text-align: center;
+  padding: 20px;
+  transition: padding 500ms, border-radius 500ms;
+  width: 100%;
+  min-width: 300px;
+}
+
 .chart:hover {
     border-color: rgb(224, 70, 8);
-    padding: 35px;
+    padding: 40px;
     border-radius: 5px;
 }
 
