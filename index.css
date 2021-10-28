@@ -107,6 +107,12 @@ header {
   min-width: 300px;
 }
 
+.chart:hover, #firstChart:hover {
+  border-color: rgb(224, 70, 8);
+  border-radius: 5px;
+  flex-grow: 2;
+}
+
 .chart:hover {
     border-color: rgb(224, 70, 8);
     padding: 40px;
