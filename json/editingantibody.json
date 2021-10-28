@@ -8,7 +8,7 @@
   "height": 300,
   "width": 280,
   "data": {
-    "url": "https://raw.githubusercontent.com/jamiebbb/jamiebbb.github.io/main/cumantibodytests.csv",
+    "url": "https://raw.githubusercontent.com/jamiebbb/jamiebbb.github.io/main/data/cumantibodytests.csv",
     "format": {"type": "csv"}
   },
   "mark": {
