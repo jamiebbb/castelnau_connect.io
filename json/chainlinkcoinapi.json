@@ -49,7 +49,7 @@
       }},
 
     "y": {
-      "field": "rate_low",
+      "field": "rate_close",
       "type": "quantitative",
       "title": "",
       "axis": {
