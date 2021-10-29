@@ -6,12 +6,6 @@ body {
     background-color: #e6f202 ;
     max-width: 90%;
     margin: auto;
-    
-  animation: fadeIn ease 2s;
-  -webkit-animation: fadeIn ease 2s;
-  -moz-animation: fadeIn ease 2s;
-  -o-animation: fadeIn ease 2s;
-  -ms-animation: fadeIn ease 2s;
 }
 
 .bodyText {
@@ -86,7 +80,7 @@ header {
     border-radius: 25px;
     text-align: center;
     padding: 20px;
-    transition: padding 500ms, border-radius 500ms;
+    transition: padding 700ms, border-radius 700ms;
 }
 
 #firstChart{
@@ -105,7 +99,7 @@ header {
 .chart:hover, #firstChart:hover {
   border-color: rgb(104, 5, 242);
   border-radius: 5px;
-  flex-grow: 3;
+  flex-grow: 2;
 }
 
 .chart:focus {
