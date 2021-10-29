@@ -80,7 +80,7 @@ header {
     border-radius: 25px;
     text-align: center;
     padding: 20px;
-    transition: padding 700ms, border-radius 700ms;
+    transition: padding 400ms, border-radius 400ms;
 }
 
 #firstChart{
