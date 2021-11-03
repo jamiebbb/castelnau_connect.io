@@ -108,11 +108,12 @@ header {
   flex-grow: 2;
 }
 
-.chart:focus {
+/*.chart:focus {
     border-color: rgb(104, 5, 242);
     padding: 40px;
     border-radius: 5px;
 }
+*/
 /* --------------------------------------- END BODY CONTENT --------------------------------------*/
 
 footer {
