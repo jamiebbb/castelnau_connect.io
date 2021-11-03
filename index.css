@@ -80,7 +80,7 @@ header {
     background-color: white;
     border-style: solid;
     border-color: white;
-    border-width: 2px;
+    border-width: 4px;
     border-radius: 25px;
     text-align: center;
     padding: 20px;
@@ -105,7 +105,7 @@ header {
 .chart:hover, #firstChart:hover {
   border-color: rgb(104, 5, 242);
   border-radius: 5px;
-  flex-grow: 2;
+  flex-grow: 1;
 }
 
 /*.chart:focus {
