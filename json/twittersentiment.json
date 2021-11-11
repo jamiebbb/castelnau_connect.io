@@ -8,7 +8,7 @@
     "subtitleFontSize":10,
     "subtitleColor":"#db1779"
   },
-  "height": 250,
+  "height": 300,
   "width": "container",
   "data": {"url": "https://raw.githubusercontent.com/jamiebbb/jamiebbb.github.io/main/data/Safemoon_sentiment_10.11.csv"},
   "mark": "bar",
