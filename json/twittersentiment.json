@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": "container",
+  
   "title": {
     "text": "Safemoon Twitter Sentiment",
     "subtitle": "Data scraped from Twitter using Tweepy on 10/11/21",
@@ -9,6 +9,7 @@
     "subtitleColor":"#db1779"
   },
   "height": 250,
+  "width": "container",
   "data": {"url": "https://raw.githubusercontent.com/jamiebbb/jamiebbb.github.io/main/data/Safemoon_sentiment_10.11.csv"},
   "mark": "bar",
   "encoding": {
