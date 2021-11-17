@@ -40,17 +40,18 @@ h2 {
 }
 
 h3 {
-    color: #9101D8
+    color: #33DAFF
     font-weight: lighter;
-    font-size: 20px;
-    margin-top: -55px;
+    font-size: 15px;
 }
 
 p {
-    color: #33DAFF;
-    font-size: 15px;
+    color: #9101D8;
+    font-size: 20px;
     font-family: 'Poppins', sans-serif;
     font-weight: lighter;
+    margin-top: -55px;
+
 }
 
 .hcontainer {
