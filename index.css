@@ -39,6 +39,12 @@ h2 {
     margin-top: -35px;
 }
 
+p {
+    color: #33DAFF;
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+}
+
 .hcontainer {
     display: flex;
     justify-content: space-between;
@@ -54,13 +60,6 @@ header {
 }
 /* --------------------------------------- END HEADER CONTENT --------------------------------------*/
 
-.blue {
-    color: rgb(17, 143, 242);
-}
-
-.white {
-    color: white
-}
 
 /* ------------------------------ BODY CONTENT -------------------------------- PARTLY INSPIRED BY TAHA ADAMALY -> LEGEND */
 
