@@ -5,7 +5,7 @@
 
    "title": {
     "text": "Are we more productive working at home?",
-    "subtitle":"Output per Worker: Whole Economy: % change per annum",
+    "subtitle":"Output per Worker: Whole Economy: % change per annum. Source: ONS",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":11,
     "anchor": "start",
@@ -28,9 +28,12 @@
 
   "mark": {
     "type": "line",
-    "point": false,
+    "point": true,
+    "size": 2,
+    "opacity": 1,
+    "tooltip": true,
     "interpolate": "linear",
-    "color":"#ff3c00"
+    "color":"#00e239"
   },
 
   "encoding": {
