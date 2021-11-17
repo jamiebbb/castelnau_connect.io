@@ -1,0 +1,63 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+  "description": "",
+
+   "title": {
+    "text": "Are we more productive working at home?",
+    "subtitle":"Output per Worker: Whole Economy: % change per annum",
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":11,
+    "anchor": "start",
+    "color": "#000000",
+    "subtitleColor":"#174bdb"},
+
+  "config": {
+    "background":"#ffffff",
+    "view": {
+      "stroke": "transparent"}},
+ 
+  
+  "data": {
+    "url": "https://raw.githubusercontent.com/jamiebbb/jamiebbb.github.io/main/data/outputperworker.csv"},
+  
+
+  "height": 300,
+  "width": "container",
+  
+
+  "mark": {
+    "type": "line",
+    "point": false,
+    "interpolate": "linear",
+    "color":"#ff3c00"
+  },
+
+  "encoding": {
+    "x": {
+      "field": "Date",
+      "type": "ordinal",
+      "axis": {
+        "title": "Date",
+        "grid": false,
+        "labelSeparation": 10,
+        "domainColor":"dimgrey",
+        "labelColor":"#1f00a7",
+        "tickColor":"black",
+        "gridColor":"dimgrey"
+      }},
+
+    "y": {
+      "field": "Output per Worker: Whole Economy: % change per annum",
+      "type": "quantitative",
+      "title": "Output per Worker",
+      "axis": {
+        "grid": true,
+        "domainColor":"dimgrey",
+        "labelColor":"#1f00a7",
+        "tickColor":"black",
+        "gridColor":"dimgrey",
+        "format":""}
+        }
+     }
+}
