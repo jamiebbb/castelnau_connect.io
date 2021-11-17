@@ -83,12 +83,25 @@ header {
     border-radius: 25px;
     text-align: center;
     padding: 20px;
-    transition: border-radius 400ms, flex-grow 1000ms;
-    width: 45%;
+    transition: border-radius 500ms, flex-grow 1000ms;
+    width: 40%;
     min-width: 300px;
 }
 
 #firstChart{
+  background-color: white;
+  border-style: solid;
+  border-color: white;
+  border-width: 4px;
+  border-radius: 25px;
+  text-align: center;
+  padding: 20px;
+  transition: padding 500ms, border-radius 500ms;
+  width: 100%;
+  min-width: 300px;
+}
+
+#sixteenthChart{
   background-color: white;
   border-style: solid;
   border-color: white;
@@ -107,12 +120,6 @@ header {
   flex-grow: 1;
 }
 
-/*.chart:focus {
-    border-color: rgb(104, 5, 242);
-    padding: 40px;
-    border-radius: 5px;
-}
-*/
 /* --------------------------------------- END BODY CONTENT --------------------------------------*/
 
 footer {
