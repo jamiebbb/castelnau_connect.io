@@ -22,26 +22,6 @@ body {
     display: grid;
 }
 
-  animation: fadeIn ease 2s;
-  -webkit-animation: fadeIn ease 2s;
-  -moz-animation: fadeIn ease 2s;
-  -o-animation: fadeIn ease 2s;
-  -ms-animation: fadeIn ease 2s;
-}
-
-::-webkit-scrollbar {
-  width: 6px;
-}
-::-webkit-scrollbar-track {
-  background: #081521;
-}
-::-webkit-scrollbar-thumb {
-  background: #FFFFFF;
-  border-radius: 25px;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: rgb(155, 155, 155);
-}
 
 /* --------------------------------------- HEADER CONTENT --------------------------------------*/
 /* Data Science Title */
@@ -251,50 +231,3 @@ footer {
     gap: 10px 10px
   }
 }
-
-@keyframes fadeIn {
-  0% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
-  }
-}
-
-@-moz-keyframes fadeIn {
-  0% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
-  }
-}
-
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
-  }
-}
-
-@-o-keyframes fadeIn {
-  0% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
-  }
-}
-
-@-ms-keyframes fadeIn {
-  0% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
-  }
-}
-
-
