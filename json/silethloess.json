@@ -3,15 +3,14 @@
   "data": {
     "url": "https://raw.githubusercontent.com/jamiebbb/jamiebbb.github.io/main/data/ETH-USD%20monthly%20sep15-oct21.csv"
   },
-  "width": 300,
+  "width": "container",
   "title": {
-    "text": "Local regression: Ethereum Open Price on Silver Open Price",
+    "text": "Linear regression: Ethereum Open Price on Silver Open Price",
     "subtitle": "Monthly data from Yahoo Finance and Investing.com, 01/09/15 - 01/10/21",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":11,
     "subtitleColor":"#2417db9c"
-    },
-
+  },
   "layer": [
     {
       "mark": {
@@ -22,7 +21,10 @@
       "encoding": {
         "x": {
           "field": "ETH Open",
-          "type": "quantitative"
+          "type": "quantitative",
+          "axis": {
+            "domain": true
+          }
         },
         "y": {
           "field": "Silver Open",
@@ -37,8 +39,8 @@
       },
       "transform": [
         {
-          "loess": "Silver Open",
-          "on": "ETH Open"
+          "regression": "ETH Open",
+          "on": "Silver Open"
         }
       ],
       "encoding": {
@@ -50,6 +52,26 @@
           "field": "Silver Open",
           "type": "quantitative"
         }
+      }
+    },
+    {
+      "transform": [
+        {
+          "regression": "ETH Open",
+          "on": "Silver Open",
+          "params": true
+        },
+        {"calculate": "'R²: '+format(datum.rSquared, '.2f')", "as": "R2"}
+      ],
+      "mark": {
+        "type": "text",
+        "color": "firebrick",
+        "x": "width",
+        "align": "right",
+        "y": -10
+      },
+      "encoding": {
+        "text": {"type": "nominal", "field": "R2"}
       }
     }
   ]
