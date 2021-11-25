@@ -6,7 +6,7 @@
   "width": 300,
   "title": {
     "text": "Local regression: Ethereum Open Price on Silver Open Price",
-    "subtitle": "Data from Yahoo Finance and Investing.com",
+    "subtitle": "Monthly data from Yahoo Finance and Investing.com, 01/09/15 - 01/10/21",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":11,
     "subtitleColor":"#2417db9c"
