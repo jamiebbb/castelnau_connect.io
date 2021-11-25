@@ -1,0 +1,56 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/jamiebbb/jamiebbb.github.io/main/data/ETH-USD%20monthly%20sep15-oct21.csv"
+  },
+  "width": 300,
+  "title": {
+    "text": "Local regression: Ethereum Open Price on Silver Open Price",
+    "subtitle": "Data from Yahoo Finance and Investing.com",
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":11,
+    "subtitleColor":"#2417db9c"
+    },
+
+  "layer": [
+    {
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "tooltip": true
+      },
+      "encoding": {
+        "x": {
+          "field": "ETH Open",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "Silver Open",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "line",
+        "color": "firebrick"
+      },
+      "transform": [
+        {
+          "loess": "Silver Open",
+          "on": "ETH Open"
+        }
+      ],
+      "encoding": {
+        "x": {
+          "field": "ETH Open",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "Silver Open",
+          "type": "quantitative"
+        }
+      }
+    }
+  ]
+}
