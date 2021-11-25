@@ -125,7 +125,20 @@ header {
   min-width: 300px;
 }
 
-.chart:hover, #firstChart:hover, #sixteenthChart:hover {
+#seventeenthChart{
+  background-color: white;
+  border-style: solid;
+  border-color: white;
+  border-width: 4px;
+  border-radius: 25px;
+  text-align: center;
+  padding: 20px;
+  transition: padding 500ms, border-radius 500ms;
+  width: 100%;
+  min-width: 300px;
+}
+
+.chart:hover, #firstChart:hover, #sixteenthChart:hover, #seventeenthChart:hover {
   border-color: rgb(104, 5, 242);
   border-radius: 5px;
   flex-grow: 1;
