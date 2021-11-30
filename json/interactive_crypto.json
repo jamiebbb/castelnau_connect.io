@@ -1,0 +1,81 @@
+
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+
+"title": {
+    "text": "Volume: Five Crypto's",
+    "subtitle":"Daily volume for past 2 years. Source: Yahoo Finance",
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "start",
+    "color": "darkgreen",
+    "subtitleColor": "darkgoldenrod"
+  },
+
+  "description": "Coronavirus cases",
+  "data": {
+    "url": "https://raw.githubusercontent.com/jamiebbb/jamiebbb.github.io/main/data/crypto_volume2.csv",
+    "format": {"type": "csv"}
+  },
+
+  "height": 300,
+  
+  "width": "container",
+  
+  "mark": {"type": "bar", 
+           "width":10,
+           "fillOpacity": 0.9,
+           "tooltip": true          
+           },
+  
+  "selection": {
+    "Crypto": {
+      "type": "single",
+      "fields": ["Name"],
+      "bind": {
+        "input": "select",
+        "options": [
+          null,
+          "BTC-USD",
+          "ETH-USD",
+          "BNB-USD",
+          "XRP-USD",
+          "ALGO-USD"
+        ],
+        "name": "Pick a crypto:"
+      }
+    }
+  },
+  "transform": [
+    
+    {"filter": {"selection": "Crypto"}},
+    {
+      "filter": {
+        "field": "Date",
+        "range": [
+          {"year": 2018, "month": "dec", "date": 5},
+          {"year": 2050, "month": "dec", "date": 30}
+        ]
+      }
+    }
+  ],
+
+  "encoding": {
+    "x": {
+      "field": "Date", 
+      "type": "temporal", 
+      "title": "Date"},
+    "y": {
+      "field": "Volume",
+      "type": "quantitative",
+      "title": "Volume"
+    },
+    
+      
+    "color": {
+      "field": "Name",
+      "type": "nominal",
+      "scale": {"scheme": "inferno"}
+    }
+  }
+}
