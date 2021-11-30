@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppinswght@300&family=Poppins:wght@600");
 
 body {
-    background-color: #439A00 ;
+    background-color: #00ABFF;
     max-width: 90%;
     margin: auto;
 }
@@ -125,7 +125,7 @@ header {
   min-width: 300px;
 }
 
-#seventeenthChart{
+#seventeenthChart, #eighteenthChart{
   background-color: white;
   border-style: solid;
   border-color: white;
@@ -138,7 +138,7 @@ header {
   min-width: 300px;
 }
 
-.chart:hover, #firstChart:hover, #sixteenthChart:hover, #seventeenthChart:hover {
+.chart:hover, #firstChart:hover, #sixteenthChart:hover, #seventeenthChart:hover, #eighteenthChart:hover {
   border-color: rgb(104, 5, 242);
   border-radius: 5px;
   flex-grow: 1;
