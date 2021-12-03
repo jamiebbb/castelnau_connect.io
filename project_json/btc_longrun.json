@@ -1,0 +1,101 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  
+  
+   "title": {
+    "text": "Bitcoin: long run price",
+    "fontSize": 20,
+    "subtitle":"Daily BTC price in USD. Source: Investing.com and Bitfinex",
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":12,
+    "anchor": "start",
+    "color": "#F7931A",
+    "subtitleColor":"#179fdb"},
+  
+  "config": {
+    "background":"#ffffff",
+    "view": {
+      "stroke": "transparent"}},
+  
+  
+  
+    "width":"container",
+    "height":300,
+  
+  
+    "data": {
+      "name":"myData",
+      "url": "https://raw.githubusercontent.com/jamiebbb/jamiebbb.github.io/main/project_data/btcdaily_24.11.21.csv"},
+  
+  
+    "mark": {
+    "type": "line",
+    "point": false,
+    "interpolate": "linear",
+    "color":"#F7931A",
+    "tooltip": true,
+    "opacity": 0.9,
+    "size": 1
+  },
+  
+    "transform": [
+      {"calculate": "year(datum.Date)", "as": "year"},  
+      {"filter": "datum.year>=minYear"},
+      {"filter": "datum.year<=maxYear"}
+  ],
+  
+    "params": [    
+      {"name":"minYear", "value":2012,
+         "bind":{
+           "input": "range",
+           "min": 2012, 
+           "max": 2021, 
+           "step": 1,
+           "name": "Start year:"}
+      },
+  
+      {"name":"maxYear", "value":2021,
+         "bind":{
+           "input": "range",
+           "min": 2012, 
+           "max": 2021, 
+           "step": 1,
+           "name": "End year:"}
+      }
+    ],
+  
+  
+  
+    "encoding": {
+      
+     
+    "x": {
+      "field": "Date",
+      "type": "temporal",
+      "axis": {
+        "title": "Date",
+        "grid": true,
+        "labelSeparation": 10,
+        "domainColor":"dimgrey",
+        "labelColor":"#00a767",
+        "tickColor":"pink",
+        "gridColor":"dimgrey"
+      }},
+  
+    "y": {
+      "field": "Price",
+      "type": "quantitative",
+      "scale": {"type": "linear"
+      },
+      "title": "Price",
+
+      "axis": {
+        "grid": true,
+        "domainColor":"dimgrey",
+        "labelColor":"#00a767",
+        "tickColor":"pink",
+        "gridColor":"dimgrey",
+        "format":"$,.5"}
+        }
+     }
+  }
