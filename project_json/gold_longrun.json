@@ -73,7 +73,7 @@
           "type": "quantitative",
           "title": "",
           "axis": {
-            "grid": false,            
+            "grid": true,            
             "labelColor":"black",
             "format": "$,.5"}      
             },
