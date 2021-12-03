@@ -52,13 +52,36 @@
   <button onclick="location.href='https://rapidcharts.io/library'">About Me</button>
 </div>
 
-
 <!--Project content should go here-->
-<h1>Can Bitcoin (BTC) really be considered digital Gold? </h1>       
- <container class="bcontainer"> 
+<h1>Can Bitcoin (BTC) really be considered digital Gold? </h1> 
+ <!--- <container class="bcontainer"> 
   <h2 style="margin-top: 22px; margin-bottom: 22px; font-style: italic;">Soon to come...</h2>
  </container>
+----->
+           
+ <!--- Section 1: BTC long run price next to Gold long run price ---> 
+           
+<p class="bodyText"><span style="color: rgb(219, 188, 188); font-weight: 1000;">Section 1:</span> Bitcoin and Gold Price since 2012</p>
+<container class="bcontainer">    
+    <!--BTC price chart from investing.com-->
+<div class="chart" id="chart1">
+  <script>
+    var myChart1 = "project_json/btc_longrun.json";
+    vegaEmbed('#chart1', myChart1);
+  </script>
+</div>
+
+ <!--Gold price chart from investing.com --> 
+<div class="chart" id="chart2">
+  <script>
+    var myChart1 = "project_json/gold_longrun.json";
+    vegaEmbed('#chart2', myChart1);
+  </script>
+</div>
+   
+</container>
        
+   <!------- END SECTION 1 ---------->
 
 
 <!--Footer, to add a buffer at the bottom of the page-->
