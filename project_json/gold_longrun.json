@@ -5,7 +5,7 @@
    "title": {
     "text": "Gold: long run price",
     "fontSize": 20,
-    "subtitle":"Daily Gold price in USD. Source: Investing.com and Bitfinex",
+    "subtitle":"Daily Gold (1 Troy Ounce) price in USD. Source: Investing.com",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":12,
     "anchor": "start",
