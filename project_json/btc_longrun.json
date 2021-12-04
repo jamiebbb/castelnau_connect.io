@@ -10,10 +10,12 @@
   "subtitleFontSize":12,
   "color": "#F7931A",
   "subtitleColor":"#000000",
-  "anchor": "start"},
+  "anchor": "start"
+  },
 
   "width":"container",
   "height":300,
+
 
 
   "data": {
@@ -55,7 +57,11 @@
       "x": {
         "field": "Date",
         "title":null,
-        "type": "temporal"}
+        "type": "temporal",
+        "axis": {
+          "grid": true
+        }
+        }
         },
           
    "layer":[
@@ -64,7 +70,9 @@
           "type": "line",
           "point": false,
           "strokeWidth":1,
-          "width":1
+          "width": 1,
+          "opacity": 1,
+          "tooltip": true
         },
 
       "encoding": {
@@ -91,14 +99,9 @@
           "strokeWidth":1,
     "interpolate": "linear",
     "color":"#FFD700",
-    "tooltip": true,
-    "opacity": 0.9,
+    "opacity": 0.4,
     "size": 1
-  
-
         },
-
-
 
       "encoding": {
           "y": {
