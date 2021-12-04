@@ -61,20 +61,14 @@
   <h2 style="margin-top: 22px; margin-bottom: 22px; font-style: italic;">Soon to come...</h2>
  </container>
 ----->
-            <!--- Section 0: Live price tickers for BTC and Gold --->
+            <!--- Section 0: Live price quotes for BTC and Gold --->
   <p class="bodyText"><span style="color: rgb(219, 188, 188); font-weight: 1000;">Live Bitcoin and Gold Quote</span> </p>
 <container class="bcontainer">    
-    <!--BTC price chart from investing.com-->
-<div class="chart" id="chart1">
-  <script>
-    var myChart1 = "project_json/btc_longrun.json";
-    vegaEmbed('#chart1', myChart1);
-  </script>
-</div>
-
+    <!--BTC price ticker from nomics.com-->
+     <div class="nomics-ticker-widget" data-name="Bitcoin" data-base="BTC" data-quote="USD"></div><script src="https://widget.nomics.com/embed.js"></script>
+	
  <!--Gold price ticker from bullionvault.com --> 
-           <div id="banner1"></div>
-
+        <div id="banner1"></div>
 	<script type="text/javascript">
 		var options = {
 			referrerID: "MYUSERNAME",
@@ -84,8 +78,7 @@
 			weightUnit: "TOZ"
 		};
 		new BullionVaultPriceWidget('banner1', options);
-	</script>
-   
+	</script> 
 </container>         
            
            
