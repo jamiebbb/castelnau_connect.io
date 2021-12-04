@@ -100,7 +100,8 @@
     "interpolate": "linear",
     "color":"#FFD700",
     "opacity": 0.4,
-    "size": 1
+    "size": 1,
+    "tooltip": true
         },
 
       "encoding": {
