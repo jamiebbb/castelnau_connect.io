@@ -3,7 +3,7 @@
 
 
  "title": {
-  "text": "Gold Price vs Volume",
+  "text": "Gold: Price vs Volume",
   "subtitle":"Daily Gold (1 Troy Ounce) price in USD and volume traded. Source: Investing.com",
   "fontSize": 20,
   "subtitleFontStyle":"italic",
