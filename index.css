@@ -117,7 +117,7 @@ header {
 }
 
 
-#firstChart, #sixteenthChart, #seventeenthChart, #eighteenthChart, #chart3{
+#firstChart, #sixteenthChart, #seventeenthChart, #eighteenthChart, #chart3, #chart4{
   background-color: white;
   border-style: solid;
   border-color: white;
@@ -130,7 +130,7 @@ header {
   min-width: 300px;
 }
 
-.chart:hover, #firstChart:hover, #sixteenthChart:hover, #seventeenthChart:hover, #eighteenthChart:hover, #chart3:hover {
+.chart:hover, #firstChart:hover, #sixteenthChart:hover, #seventeenthChart:hover, #eighteenthChart:hover, #chart3:hover, #chart4:hover {
   border-color: rgb(104, 5, 242);
   border-radius: 5px;
   flex-grow: 1;
