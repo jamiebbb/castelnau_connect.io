@@ -7,10 +7,10 @@
   "height": 300,
   "autosize":"fit",
   "title": {
-    "text": "Linear regression: Gold - Bitcoin Weekly Average Price (USD)",
-    "subtitle": "Daily price data from Investing.com, cleaned in Python. 05/02/11 - 28/11/21.",
+    "text": "Linear regression: Gold - Bitcoin Weekly Average Price",
+    "subtitle": "Daily price data in USD from Investing.com, cleaned in Python. 05/02/12 - 28/11/21.",
     "subtitleFontStyle":"italic",
-    "subtitleFontSize":11,
+    "subtitleFontSize":12,
     "subtitleColor":"#2417db9c",
     "align": "center"
   },
