@@ -1,0 +1,84 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/jamiebbb/jamiebbb.github.io/main/project_data/btc_gold_weekly_28-11-21.csv"
+  },
+  "width": "container",
+  "height": 300,
+  "autosize":"fit",
+  "title": {
+    "text": "Linear regression: Gold - Bitcoin Weekly Average Price (USD)",
+    "subtitle": "Daily price data from Investing.com, cleaned in Python. 05/02/11 - 28/11/21.",
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":11,
+    "subtitleColor":"#2417db9c",
+    "align": "center"
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "square",
+        "filled": true,
+        "tooltip": true
+      },
+      "encoding": {
+        "x": {
+          "field": "Bitcoin Price",
+          "type": "quantitative",
+          "axis": {
+            "domain": true
+          }
+        },
+        "y": {
+          "field": "Gold Price",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "line",
+        "color": "burlywood",
+        "opacity": 1,
+        "thickness": 1,
+        "tooltip": true
+      },
+      "transform": [
+        {
+          "regression": "Bitcoin Price",
+          "on": "Gold Price"
+        }
+      ],
+      "encoding": {
+        "x": {
+          "field": "Bitcoin Price",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "Gold Price",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "regression": "Gold Price",
+          "on": "Bitcoin Price",
+          "params": true
+        },
+        {"calculate": "'R²: '+format(datum.rSquared, '.2f')", "as": "R2"}
+      ],
+      "mark": {
+        "type": "text",
+        "color": "firebrick",
+        "x": "width",
+        "align": "right",
+        "y": -10
+      },
+      "encoding": {
+        "text": {"type": "nominal", "field": "R2"}
+      }
+    }
+  ]
+}
