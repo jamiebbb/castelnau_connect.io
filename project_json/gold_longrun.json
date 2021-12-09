@@ -25,8 +25,7 @@
 
 
   "transform": [
-      {"calculate": "datum.High", "as": "High Price"},
-      {"calculate": "datum.Low", "as": "Low Price"},
+      {"calculate": "datum.Open", "as": "Open Price"},
       {"calculate": "year(datum.Date)", "as": "year"},  
       {"filter": "datum.year>=minYear"},
       {"filter": "datum.year<=maxYear"}
@@ -77,7 +76,7 @@
 
       "encoding": {
           "y": {
-          "field": "Open",
+          "field": "Open Price",
           "type": "quantitative",
           "title": "",
           "axis": {
