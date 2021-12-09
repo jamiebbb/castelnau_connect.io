@@ -4,12 +4,12 @@
 
  "title": {
   "text": "Bitcoin: Price vs Volume",
-  "subtitle":"Daily BTC price in USD and volume traded. Source: Investing.com and Bitfinex",
+  "subtitle":"Daily BTC high and low price in USD against volume traded. Source: Investing.com",
   "fontSize": 20,
   "subtitleFontStyle":"italic",
   "subtitleFontSize":12,
   "color": "#F7931A",
-  "subtitleColor":"#000000",
+  "subtitleColor":"#F7931A",
   "anchor": "start"
   },
 
@@ -20,13 +20,14 @@
 
   "data": {
     "name":"myData",
-    "url": "https://raw.githubusercontent.com/jamiebbb/jamiebbb.github.io/main/project_data/btcdaily_24.11.21.csv"},
+    "url": "https://raw.githubusercontent.com/jamiebbb/jamiebbb.github.io/main/project_data/daily_btc_gold_data_19-07-2010.csv"},
 
 
 
   "transform": [
-      {"calculate":"replace(datum.Change,'%','')/100", "as": "change"},
-      {"calculate":"replace(datum.Vol,'K','')*1000", "as": "Volume"},
+      {"calculate": "datum.HighBTC", "as": "High Price"},
+      {"calculate": "datum.LowBTC", "as": "Low Price"},
+      {"calculate": "datum.VolumeBTC", "as": "Volume"},
       {"calculate": "year(datum.Date)", "as": "year"},  
       {"filter": "datum.year>=minYear"},
       {"filter": "datum.year<=maxYear"},
@@ -59,7 +60,8 @@
         "title":null,
         "type": "temporal",
         "axis": {
-          "grid": true
+          "grid": true,
+          "labelColor": "darkgoldenrod"
         }
         }
         },
@@ -77,14 +79,18 @@
 
       "encoding": {
           "y": {
-          "field": "Price",
+          "field": "High Price",
           "type": "quantitative",
           "title": "",
           "axis": {
             "grid": true,            
-            "labelColor":"black",
+            "labelColor":"blue",
+            "tickColor": "chocolate",
             "format": "$,.5"}      
             },
+
+          "y2": {"field": "Low Price", "axis": {"format": "$,.5"}
+          },
             
           "color": {
             "datum": "Price",
@@ -99,7 +105,7 @@
           "strokeWidth":1,
     "interpolate": "linear",
     "color":"#FFD700",
-    "opacity": 0.4,
+    "opacity": 0.5,
     "size": 1,
     "tooltip": true
         },
@@ -111,7 +117,8 @@
           "title": "",
           "axis": {
             "grid": false,
-            "labelColor":"black"}
+            "labelColor":"red",
+            "tickColor": "pink"}
           
             },
             
@@ -126,4 +133,5 @@
 ],
 
     "resolve": {"scale": {"y": "independent"}} 
+
 }
