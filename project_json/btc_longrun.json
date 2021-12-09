@@ -3,8 +3,8 @@
 
 
  "title": {
-  "text": "Bitcoin: Price vs Volume",
-  "subtitle":"Daily BTC high and low price in USD against volume traded. Source: Investing.com",
+  "text": "Bitcoin (BTC): Price vs Volume",
+  "subtitle":"Daily BTC high and low price (USD) against volume traded. Source: Investing.com",
   "fontSize": 20,
   "subtitleFontStyle":"italic",
   "subtitleFontSize":12,
