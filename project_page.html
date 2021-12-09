@@ -60,7 +60,7 @@
  </container>   ----->                    
            
  <!--- Section 1: BTC long run price next to Gold long run price --->           
-<p class="bodyText"><span style="color: rgb(219, 188, 188); font-weight: 1000;">Section 1:</span> Bitcoin and Gold Price vs Volume since 2012</p>
+<p class="bodyText"><span style="color: rgb(219, 188, 188); font-weight: 1000;">Bitcoin (BTC):</span> Price and Volume since 2010</p>
 <container class="bcontainer">    
     <!--BTC price chart from investing.com-->
 <div class="chart" id="chart1">
@@ -69,7 +69,10 @@
     vegaEmbed('#chart1', myChart1);
   </script>
 </div>
+</container>
 
+<p class="bodyText"><span style="color: rgb(219, 188, 188); font-weight: 1000;">Gold:</span> Price and Volume since 2010</p>
+<container class="bcontainer"> 
  <!--Gold price chart from investing.com --> 
 <div class="chart" id="chart2">
   <script>
@@ -77,20 +80,26 @@
     vegaEmbed('#chart2', myChart1);
   </script>
 </div>
-   
 </container>
        
    <!------- END SECTION 1 ---------->
            
    <!--- Section 2: BTC vs Gold Normalised Prices ---> 
            
-<p class="bodyText"><span style="color: rgb(219, 188, 188); font-weight: 1000;">Section 2:</span> BTC vs Gold Normalised Prices</p>
+<p class="bodyText"><span style="color: rgb(219, 188, 188); font-weight: 1000;">BTC vs Gold:</span> Normalised Prices and Z-Score Graph</p>
 <container class="bcontainer">    
-    <!--BTC price chart from investing.com-->
+    <!--Chart made in Python - link to colab notebook here: https://colab.research.google.com/drive/1gijxGoskQoGSqWydVFLoHWBYs--MHWPl#scrollTo=d9CzCC37ay0x-->
 <div class="chart" id="chart3">
   <script>
     var myChart1 = "project_json/btc_gold_normal.json";
     vegaEmbed('#chart3', myChart1);
+  </script>
+</div>
+           
+  <div class="chart" id="chart4">
+  <script>
+    var myChart1 = "project_json/btc_gold_z_score.json";
+    vegaEmbed('#chart4', myChart1);
   </script>
 </div>
 
@@ -100,13 +109,13 @@
 
    <!--- Section 3: Linear Regression - BTC vs Gold ---> 
            
-<p class="bodyText"><span style="color: rgb(219, 188, 188); font-weight: 1000;">Section 3:</span> Linear Regression - BTC vs Gold</p>
+<p class="bodyText"><span style="color: rgb(219, 188, 188); font-weight: 1000;">Linear regression:</span> BTC vs Gold</p>
 <container class="bcontainer">    
     <!--BTC price chart from investing.com-->
-<div class="chart" id="chart4">
+<div class="chart" id="chart5">
   <script>
     var myChart1 = "project_json/btc_gold_reg.json";
-    vegaEmbed('#chart4', myChart1);
+    vegaEmbed('#chart5', myChart1);
   </script>
 </div>
 
