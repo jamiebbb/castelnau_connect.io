@@ -35,10 +35,10 @@
   ],
   
     "params": [    
-      {"name":"minYear", "value":2012,
+      {"name":"minYear", "value":2010,
          "bind":{
            "input": "range",
-           "min": 2012, 
+           "min": 2010, 
            "max": 2021, 
            "step": 1,
            "name": "Start year:"}
@@ -47,7 +47,7 @@
       {"name":"maxYear", "value":2021,
          "bind":{
            "input": "range",
-           "min": 2012, 
+           "min": 2010, 
            "max": 2021, 
            "step": 1,
            "name": "End year:"}
