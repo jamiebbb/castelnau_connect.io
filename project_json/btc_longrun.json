@@ -4,7 +4,7 @@
 
  "title": {
   "text": "Bitcoin (BTC): Price vs Volume",
-  "subtitle":"Daily BTC high and low price (USD) against volume traded. Source: Investing.com",
+  "subtitle":"Weekly BTC Close Price (USD) against Volume Traded. Source: Investing.com",
   "fontSize": 20,
   "subtitleFontStyle":"italic",
   "subtitleFontSize":12,
@@ -20,13 +20,14 @@
 
   "data": {
     "name":"myData",
-    "url": "https://raw.githubusercontent.com/jamiebbb/jamiebbb.github.io/main/project_data/daily_btc_gold_data_19-07-2010.csv"},
+    "url": "https://raw.githubusercontent.com/jamiebbb/jamiebbb.github.io/main/project_data/btc_gold_weekly_19-07.2010.csv"},
 
 
 
   "transform": [
       {"calculate": "datum.HighBTC", "as": "High Price"},
       {"calculate": "datum.LowBTC", "as": "Low Price"},
+      {"calculate": "datum.CloseBTC", "as": "Close Price"},
       {"calculate": "datum.VolumeBTC", "as": "Volume"},
       {"calculate": "year(datum.Date)", "as": "year"},  
       {"filter": "datum.year>=minYear"},
@@ -79,7 +80,7 @@
 
       "encoding": {
           "y": {
-          "field": "High Price",
+          "field": "Close Price",
           "type": "quantitative",
           "title": "",
           "axis": {
@@ -87,13 +88,12 @@
             "labelColor":"blue",
             "tickColor": "chocolate",
             "format": "$,.5"}      
-            },
+            
 
-          "y2": {"field": "Low Price", "axis": {"format": "$,.5"}
           },
             
           "color": {
-            "datum": "Price",
+            "datum": "Close Price",
             "scale": {"range": ["blue", "red"]},
             "legend":{
               "orient": "top-left"}}}
