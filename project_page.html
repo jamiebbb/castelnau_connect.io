@@ -87,16 +87,17 @@
    <!--- Section 2: BTC vs Gold Normalised Prices ---> 
            
 <p class="bodyText"><span style="color: rgb(219, 188, 188); font-weight: 1000;">BTC vs Gold:</span> Normalised Prices and Z-Score Graph</p>
-<container class="bcontainer">    
+<container class="bcontainer">   
+           
     <!--Chart made in Python - link to colab notebook here: https://colab.research.google.com/drive/1gijxGoskQoGSqWydVFLoHWBYs--MHWPl#scrollTo=d9CzCC37ay0x-->
-  <script>
-  <img src="project_json/min-max-normal.png" alt="Trulli" width="300" height="300">
-  </script>
-</div>
+           
+  <div class="chart" id="chart3">
+  <img src="project_json/min-max-normal.png" alt="EG" width="300" height="300">
+  </div>
            
   <div class="chart" id="chart4">
   <script>
-    var myChart1 = "<img src="project_json/z-score-standard.png" alt="Trulli" width="300" height="300">";
+    var myChart1 = "<img src="project_json/z-score-standard.png" alt="EG1" width="300" height="300">";
     vegaEmbed('#chart4', myChart1);
   </script>
 </div>
