@@ -59,7 +59,7 @@
         "type": "temporal",
         "axis": {
           "grid": true,
-          "labelColor": "darkgoldenrod"
+          "labelColor": "#FFD700"
         }
         }
         },
