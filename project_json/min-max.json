@@ -4,7 +4,7 @@
 
  "title": {
   "text": "Weekly Price: Min-Max Normalisation",
-  "subtitle":"Weekly BTC and Gold Close Price (USD) Normalised in Python. Source: Investing.com",
+  "subtitle":"BTC and Gold Close Price (USD) Normalised in Python. Source: Investing.com",
   "fontSize": 20,
   "subtitleFontStyle":"italic",
   "subtitleFontSize":12,
