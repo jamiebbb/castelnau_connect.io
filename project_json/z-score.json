@@ -8,8 +8,8 @@
   "fontSize": 20,
   "subtitleFontStyle":"italic",
   "subtitleFontSize":12,
-  "color": "#176508",
-  "subtitleColor":"#1fa105",
+  "color": "#0f3b06",
+  "subtitleColor":"#2bea05",
   "anchor": "start"
   },
 
@@ -94,7 +94,7 @@
             
           "color": {
             "datum": "BTC",
-            "scale": {"range": ["blue", "red"]},
+            "scale": {"range": ["#F7931A", "#FFD700"]},
             "legend":{
               "orient": "top-left"}}}
       },
