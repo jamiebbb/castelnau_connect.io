@@ -94,7 +94,7 @@
             
           "color": {
             "datum": "BTC",
-            "scale": {"range": ["blue", "red"]},
+            "scale": {"range": ["#F7931A", "#FFD700"]},
             "legend":{
               "orient": "top-left"}}}
       },
