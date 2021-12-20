@@ -7,7 +7,7 @@
   "height": 300,
   "autosize":"fit",
   "title": {
-    "text": "Linear regression: Gold - Bitcoin Weekly Close Price",
+    "text": "Linear regression: Bitcoin Weekly Close Price against Gold Weekly Close Price",
     "fontSize": 20,
     "color": "cornflowerblue",
     "subtitle": "Weekly Average Close Price (USD) data from Investing.com, cleaned in Python. 25/07/10 - 12/12/21",
