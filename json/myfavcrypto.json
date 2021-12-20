@@ -29,7 +29,7 @@
  "transform":[
       {"filter": {
         "field": "currency", 
-        "oneOf": ["SHIB", "UNI", "DOGE", "DOT", "XLM", "LINK", "EOS", "SFM", "ALGO"]}
+        "oneOf": ["SHIB", "UNI", "DOGE", "DOT", "XLM", "LINK", "EOS", "SFM2", "ALGO"]}
         }
         ,
     {"calculate": "datum.market_cap/1000000000", "as": "mktCapb"}
