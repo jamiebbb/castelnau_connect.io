@@ -89,7 +89,7 @@ header {
 /* --------------------------------------- END HEADER CONTENT --------------------------------------*/
 
 
-/* ------------------------------ BODY CONTENT -------------------------------- PARTLY INSPIRED BY TAHA ADAMALY [FLEX BOXES/FLEX-GROW */
+/* ------------------------------ BODY CONTENT -------------------------------- PARTLY INSPIRED BY TAHA ADAMALY [FLEX BOXES/FLEX-GROW] */
 
 .bcontainer {
   display: flex;
@@ -117,7 +117,7 @@ header {
 }
 
 
-#firstChart, #sixteenthChart, #seventeenthChart, #eighteenthChart, #nineteenthChart #chart1, #chart2, #chart5{
+#firstChart, #sixteenthChart, #seventeenthChart, #eighteenthChart, #nineteenthChart, #chart1, #chart2, #chart5{
   background-color: white;
   border-style: solid;
   border-color: white;
