@@ -61,11 +61,10 @@
     
    
     <!--Week 1 charts are located in container 1-->
- <p class="bodyText"><span style="color: rgb(219, 188, 188); font-weight: 700;">Homework 1:</span> Getting Started</p>
-       
+ <p class="bodyText"><span style="color: rgb(219, 188, 188); font-weight: 700;">Homework 1:</span> Getting Started</p>       
  <container class="bcontainer"> 
      
-    <!--Covid-19 Chart-->
+    <!--Covid-19 Chart from rapidcharts.io-->
   <div class="chart" id="firstChart">
       <script>
         var myChart1 = "json/chartCovid1.json";
@@ -73,13 +72,14 @@
        </script>
   </div>
 </container>
-
+        <!-- End container 1-->
     
+
     <!---Homework 2: In container 2--->
   <p class="bodyText"><span style="color: rgb(219, 188, 188); font-weight: 700;">Homework 2:</span> Embedding two charts by someone else</p>
-
   <container class="bcontainer"> 
-  <!--Productivity Chart-->
+      
+  <!--Productivity Chart from rapidcharts.io-->
 <div class="chart" id="secondChart">
  <script>
    var myChart1 = "json/chartLine1.json";
@@ -87,25 +87,22 @@
  </script>
 </div>
    
-    <!--Crypto Chart for BTC/USD-->
+    <!--Crypto Chart for BTC/USD from rapidcharts.io-->
 <div class="chart" id="thirdChart">
   <script>
     var myChart1 = "json/chartcrypto1.json";
     vegaEmbed('#thirdChart', myChart1);
   </script>
 </div>
-    
-</container>
-    
+</container> 
     <!-- End container 2-->
     
     
     <!-- Homework 3 charts located in container 3-->
 <p class="bodyText"><span style="color: rgb(219, 188, 188); font-weight: 1000;">Homework 3:</span> Hosting data - Embed two charts of your own design</p>
-
 <container class="bcontainer"> 
     
-    <!--Fully vax chart from given API-->
+    <!--Fully vax individuals chart from given API, gov.uk-->
 <div class="chart" id="fourthChart">
   <script>
     var myChart1 = "json/fullyvaxperc.json";
@@ -113,24 +110,22 @@
   </script>
 </div>
 
- <!--Double Vax Chart --> 
+ <!--Admissions to hospital vs Fully Vax Chart, data from my own csv file downloaded from gov.uk --> 
 <div class="chart" id="fifthChart">
   <script>
     var myChart1 = "json/compdoublevax.json";
     vegaEmbed('#fifthChart', myChart1);
   </script>
-</div>
-   
-</container>
-    
+</div>  
+</container> 
     <!-- End container 3-->
+    
     
     <!-- Start container 4 with week 3 work-->
 <p class="bodyText"><span style="color: rgb(219, 188, 188); font-weight: 1000;">Homework 4:</span> JSON Charts - Editing data and writing JSON by hand</p>
-
     <container class="bcontainer"> 
     
-    <!--Editing JSON chart via .csv file-->
+    <!--Editing JSON chart via .csv file, data initially from gov.uk-->
 <div class="chart" id="sixthChart">
   <script>
     var myChart1 = "json/editingantibody.json";
@@ -138,23 +133,21 @@
   </script>
 </div>
     
-        <!--Writing my own JSON chart-->
+        <!--Writing my own JSON chart, writing in-line JSON within Vega-->
     <div class="chart" id="seventhChart">
   <script>
     var myChart1 = "json/inlinejson.json";
     vegaEmbed('#seventhChart', myChart1);
   </script>
-</div>
-    
+</div>  
 </container>
     
     
-    <!-- Start container 5 with week 4 work-->
-    
+    <!-- Start container 5 with week 4 work-->  
 <p class="bodyText"><span style="color: rgb(219, 188, 188); font-weight: 1000;">Homework 5:</span> API Driven Charts - Two charts from an API I have found and gained access to</p>
-
     <container class="bcontainer"> 
-    <!--Crypto Chart using coinAPI-->
+        
+    <!--10Day average price for Algorand line chart using coinAPI-->
 <div class="chart" id="eighthChart">
   <script>
     var myChart1 = "json/coinapialgo.json";
@@ -162,23 +155,19 @@
   </script>
 </div>
     
-        <!--Crypto Chart using nomicsAPI-->
+        <!--Favourite cryptos by market cap bar chart using nomicsAPI-->
     <div class="chart" id="ninthChart">
   <script>
     var myChart1 = "json/myfavcrypto.json";
     vegaEmbed('#ninthChart', myChart1);
   </script>
-</div>
-    
-</container>
-    
+</div>   
+</container>   
     <!-- End container 5-->
-    
+   
     
     <!-- Start container 6 with week 5 work-->
-    
-<p class="bodyText"><span style="color: rgb(219, 188, 188); font-weight: 1000;">Homework 6:</span> Building a mini-dashboard using a Python loop</p>
-    
+<p class="bodyText"><span style="color: rgb(219, 188, 188); font-weight: 1000;">Homework 6:</span> Building a mini-dashboard using a Python loop</p>    
 <container class="bcontainer"> 
     
     <!--SAFEMOON Chart using coinAPI  -->
@@ -189,7 +178,7 @@
   </script>
 </div>
     
-        <!--LINK Chart using coinAPI-->
+     <!--LINK Chart using coinAPI-->
     <div class="chart" id="eleventhChart">
   <script>
     var myChart1 = "json/chainlinkcoinapi.json";
@@ -211,40 +200,39 @@
     var myChart1 = "json/eoscoinapi.json";
     vegaEmbed('#thirteenthChart', myChart1);
   </script>
-</div>
-    
-</container>
-    
+</div>  
+</container>   
     <!-- End container 6-->
     
-    <!-- Start container 7 with week 7 work-->
     
+    <!-- Start container 7 with week 7 work-->  
 <p class="bodyText"><span style="color: rgb(219, 188, 188); font-weight: 1000;">Homework 7:</span> Implementing a data scraper</p>
-
     <container class="bcontainer"> 
-    <!--Crypto Chart using coinAPI-->
+        
+    <!--Sentiment bar chart for Safemoon using Pandas to scrape the tweets from Twitter and Tweepy to analyse sentiment -->
 <div class="chart" id="fourteenthChart">
   <script>
     var myChart1 = "json/SFMtwittersentiment.json";
     vegaEmbed('#fourteenthChart', myChart1);
   </script>
 </div>
-        
+            
+    <!--Sentiment bar chart for Bitcoin using Pandas to scrape the tweets from Twitter and Tweepy to analyse sentiment -->
     <div class="chart" id="fifthteenthChart">
   <script>
     var myChart1 = "json/BTCtwittersentiment.json";
     vegaEmbed('#fifthteenthChart', myChart1);
   </script>
-</div>
-       
+</div>     
 </container>
-    
     <!-- End container 7-->
+    
     
        <!--------- Container 8 with homework 8 -------->
  <p class="bodyText"><span style="color: rgb(219, 188, 188); font-weight: 700;">Homework 8:</span> Telling a data story</p>      
  <container class="bcontainer"> 
-    <!---Productivity Chart-->
+     
+    <!---Productivity Chart from an argument made by Helen Simpson at the Festival of Economics -->
   <div class="chart" id="sixteenthChart">
       <script>
         var myChart1 = "json/productivityONS.json";
@@ -258,7 +246,8 @@
     <!--------- Container 9 with homework 9 -------->
  <p class="bodyText"><span style="color: rgb(219, 188, 188); font-weight: 700;">Homework 9:</span> Building a chart from two seperate data sources - Yahoo Finance and Investing.com</p>      
  <container class="bcontainer"> 
-    <!---Productivity Chart-->
+     
+    <!---Building a chart from two seperate data sources and creating a regression-->
   <div class="chart" id="seventeenthChart">
       <script>
         var myChart1 = "json/silethlinear.json";
@@ -267,19 +256,28 @@
     </div>
  </container>
         
+    
     <!--------- Container 10 with homework 10 -------->
  <p class="bodyText"><span style="color: rgb(219, 188, 188); font-weight: 700;">Homework 10:</span> Embedding a chart that incorporates some form of interactivity</p>      
  <container class="bcontainer"> 
-    <!---Productivity Chart-->
+     
+    <!---Interactive chart of 5 crypto's and their volume Chart-->
   <div class="chart" id="eighteenthChart">
       <script>
         var myChart1 = "json/interactive_crypto.json";
         vegaEmbed('#eighteenthChart', myChart1);
        </script>
     </div>
+     
+    <!---Interactive chart of Bitcoin and Gold - volume Chart with date slider-->
+      <div class="chart" id="nineteenthChart">
+      <script>
+        var myChart1 = "json/btc_gold_volume.json.json";
+        vegaEmbed('#nineteenthChart', myChart1);
+       </script>
+    </div>
  </container>
-    
-    
+  
     
  <!--Footer, buffer at the bottom of the page-->
 <footer>
