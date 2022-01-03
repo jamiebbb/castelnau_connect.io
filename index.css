@@ -231,14 +231,15 @@ footer {
 
 @media only screen and (max-width: 450px) {
   body {
-    max-width: 98%
+    max-width: 90%;
+    margin: auto;
   }
   .multi-button button {
     font-size: 1rem;
   }
   .chart {
     min-width: 350px;
-    padding: 10px
+    padding: 10px;
   }
   .chart:hover {
     border-color: rgb(224, 70, 8);
@@ -246,11 +247,6 @@ footer {
   .bcontainer {
     border-style: none;
     padding: 1px;
-    gap: 10px 10px
-  }
-  .hcontainer {
-    border-style: none;
-    padding: 1px;
-    gap: 10px 10px
+    gap: 10px 10px;
   }
 }
