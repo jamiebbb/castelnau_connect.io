@@ -5,11 +5,12 @@
   },
   "width": "container",
   "title": {
-    "text": "Linear regression: Ethereum Open Price on Silver Open Price",
+    "text": "Linear regression: Ethereum Price on Silver Price (USD)",
     "subtitle": "Monthly data from Yahoo Finance and Investing.com, 01/09/15 - 01/10/21",
     "subtitleFontStyle":"italic",
-    "subtitleFontSize":11,
-    "subtitleColor":"#2417db9c"
+    "subtitleFontSize":12,
+    "subtitleColor":"#2417db9c",
+    "anchor": "start"
   },
   "layer": [
     {
@@ -21,14 +22,20 @@
       "encoding": {
         "x": {
           "field": "ETH Open",
+          "title": "Ethereum",
           "type": "quantitative",
           "axis": {
-            "domain": true
+            "domain": true,
+            "format": "$,.5"
           }
         },
         "y": {
           "field": "Silver Open",
-          "type": "quantitative"
+          "title": "Silver",
+          "type": "quantitative",
+          "axis": {
+            "format": "$,.5"
+          }
         }
       }
     },
