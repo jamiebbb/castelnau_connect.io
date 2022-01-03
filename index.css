@@ -156,7 +156,7 @@ footer {
     --color-secondary: black;
     --color-tertiary: dodgerblue;
     --shadow: rgba(0, 0, 0, 0.1);
-    --space: 0.1rem;
+    --space: 1rem;
   }
   
   * {
@@ -229,23 +229,3 @@ footer {
   80% { border-color: #22e68b}
 }
 
-@media only screen and (max-width: 450px) {
-  body {
-    max-width: 98%
-  }
-  .multi-button button {
-    font-size: 1rem;
-  }
-  .chart {
-    min-width: 350px;
-    padding: 10px
-  }
-  .chart:hover {
-    border-color: rgb(224, 70, 8);
-  }
-  .bcontainer {
-    border-style: none;
-    padding: 1px;
-    gap: 10px 10px
-  }
-}
