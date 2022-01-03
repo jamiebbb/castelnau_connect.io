@@ -3,7 +3,7 @@
   "data": {
     "url": "https://raw.githubusercontent.com/jamiebbb/jamiebbb.github.io/main/project_data/assets_scores.csv"
   },
-  "width": "container",
+  "width": 300,
   "height": 300,
   "title": {
     "text": "Linear regression: Bitcoin Weekly Close Price against Gold Weekly Close Price",
