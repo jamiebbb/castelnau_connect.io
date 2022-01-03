@@ -145,7 +145,7 @@ footer {
 
 /* --------------------------------------- EXTRA SAUCE --------------------------------------*/
 
-/* Buttons on navigation bar. Inspired by freefrontend and codepen.io/hexagoncircle/pen/wvBmvOG */
+/* Multi-button on navigation bar. From freefrontend and codepen.io/hexagoncircle/pen/wvBmvOG */
 
 :root {
     --border-size: 0.125rem;
@@ -166,7 +166,6 @@ footer {
   .multi-button {
     display: flex;
     width: 100%;
-    box-shadow: var(--shadow) 4px 4px;
   }
   
   .multi-button button {
