@@ -107,7 +107,7 @@ header {
 .bcontainerproject {
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content: center;;
     gap: 30px 30px;
     padding: 20px;
     border-radius: 25px;
