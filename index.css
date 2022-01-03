@@ -104,6 +104,15 @@ header {
   border-radius: 25px;
 }
 
+.bcontainerproject {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 30px 30px;
+    padding: 20px;
+    border-radius: 25px;
+}
+
 .chart{
     background-color: white;
     border-style: solid;
