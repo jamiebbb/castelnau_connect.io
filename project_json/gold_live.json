@@ -3,6 +3,7 @@
   "description": "A daily price chart for Gold in-line JSON",
   "title": {
     "text": "Gold: Live Price (USD)",
+    "fontSize": 20,
     "subtitle":"Daily Gold (1 Troy Ounce) Price. Source: MetalsAPI",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":12,
