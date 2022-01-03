@@ -156,7 +156,7 @@ footer {
     --color-secondary: black;
     --color-tertiary: dodgerblue;
     --shadow: rgba(0, 0, 0, 0.1);
-    --space: 1rem;
+    --space: 0.1rem;
   }
   
   * {
@@ -216,7 +216,7 @@ footer {
     transform: translateY(var(--border-size));
   }
 
-/* Keyframe code for project title to pulsate different colours */
+/* Keyframe code for project title to pulsate different colours, from rapidcharts.io */
 @keyframes border-pulsate {
   0%   { border-color: #22e68b}
   10%  { border-color: rgba(230, 34, 75, 0)}
