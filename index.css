@@ -111,6 +111,9 @@ header {
     gap: 30px 30px;
     padding: 20px;
     border-radius: 25px;
+    margin-top: 30px;
+    border-style: solid;
+    border-color: white;
 }
 
 .chart{
@@ -251,7 +254,7 @@ footer {
     padding: 10px;
   }
   .chart:hover {
-    border-color: rgb(224, 70, 8);
+    border-color: rgb(104, 5, 242);
   }
   .bcontainer {
     border-style: none;
