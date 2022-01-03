@@ -216,7 +216,7 @@ footer {
     transform: translateY(var(--border-size));
   }
 
-/* Keyframe code for project title to pulsate different colours, from rapidcharts.io */
+/* Keyframe code for project title to pulsate different colours, from rapidcharts.io and Richard Davies*/
 @keyframes border-pulsate {
   0%   { border-color: #22e68b}
   10%  { border-color: rgba(230, 34, 75, 0)}
@@ -244,6 +244,11 @@ footer {
     border-color: rgb(224, 70, 8);
   }
   .bcontainer {
+    border-style: none;
+    padding: 1px;
+    gap: 10px 10px
+  }
+  .hcontainer {
     border-style: none;
     padding: 1px;
     gap: 10px 10px
