@@ -3,6 +3,8 @@
   "data": {
     "url": "https://raw.githubusercontent.com/jamiebbb/jamiebbb.github.io/main/data/ETH-USD%20monthly%20sep15-oct21.csv"
   },
+  
+  "height": 300,
   "width": "container",
   "title": {
     "text": "Linear regression: Ethereum Price on Silver Price (USD)",
