@@ -182,6 +182,7 @@ footer {
     align-content: center;
     flex-wrap: wrap;
     flex-direction: row;
+    align-items: baseline;
   }
   
   .multi-button button {
