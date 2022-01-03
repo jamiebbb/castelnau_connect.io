@@ -56,6 +56,27 @@
            
 <!--Project title with rainbow border -->     
 <h4>Can Bitcoin really be considered digital Gold? </h4>                   
+  
+ <!--- Section 0: BTC live price since Dec 1st and Gold live price since Dec 1st (in-line JSON) --->           
+<p class="bodyText"><span style="color: rgb(219, 188, 188); font-weight: 1000;">Bitcoin and Gold:</span> Live Price from December 1st 2021 to January 10th 2022</p>
+<container class="bcontainer">    
+           
+<!--BTC Live price since Dec 1st -->
+<div class="chart" id="chart6">
+  <script>
+    var myChart1 = "project_json/btc_live.json";
+    vegaEmbed('#chart6', myChart1);
+  </script>
+</div>
+
+<!--Gold Live price since Dec 1st -->
+<div class="chart" id="chart7">
+  <script>
+    var myChart1 = "project_json/gold_live.json";
+    vegaEmbed('#chart7', myChart1);
+  </script>
+</div>
+</container>           
            
  <!--- Section 1: BTC long run price vs Volume Traded --->           
 <p class="bodyText"><span style="color: rgb(219, 188, 188); font-weight: 1000;">Bitcoin:</span> Price and Volume since 2010</p>
