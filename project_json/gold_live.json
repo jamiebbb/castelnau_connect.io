@@ -69,7 +69,8 @@
     "tooltip": true
   },
   "encoding": {
-    "x": {"field": "date", "type": "temporal", "axis": {"labelAngle": 0}, "title": "Date"},
-    "y": {"field": "price", "type": "quantitative", "title": "Gold Price"}
-  }
+    "x": {"field": "date", "type": "temporal", "axis": {"labelAngle": 45, "labelColor": "#FFD700"}, "title": ""},
+    "y": {"field": "price", "type": "quantitative", "title": "", 
+    "axis": {
+      "format": "$,.5"}}}
 }
