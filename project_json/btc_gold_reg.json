@@ -5,7 +5,6 @@
   },
   "width": "container",
   "height": 300,
-  "autosize":"fit",
   "title": {
     "text": "Linear regression: Bitcoin Weekly Close Price against Gold Weekly Close Price",
     "fontSize": 20,
