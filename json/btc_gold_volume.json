@@ -3,7 +3,7 @@
 
 
  "title": {
-  "text": "Weekly Volume Traded: Bitcoin and Gold",
+  "text": "Weekly Volume Traded: Bitcoin (BTC) and Gold",
   "subtitle":"BTC and Gold Volume. Source: Investing.com",
   "subtitleFontStyle":"italic",
   "subtitleFontSize":10,
@@ -24,10 +24,8 @@
 
 
   "transform": [
-      {"calculate": "datum.HighBTC", "as": "High Price"},
-      {"calculate": "datum.LowBTC", "as": "Low Price"},
-      {"calculate": "datum.CloseBTC", "as": "Close Price"},
-      {"calculate": "datum.VolumeBTC", "as": "Volume"},
+      {"calculate": "datum.VolumeBTC", "as": "BTC Volume Traded"},
+      {"calculate": "datum.VolumeGold", "as": "Gold Volume Traded"},
       {"calculate": "year(datum.Date)", "as": "year"},  
       {"filter": "datum.year>=minYear"},
       {"filter": "datum.year<=maxYear"},
@@ -57,7 +55,7 @@
   "encoding": {     
       "x": {
         "field": "Date",
-        "title":"Date",
+        "title":"",
         "type": "temporal",
         "axis": {
           "grid": true,
@@ -79,9 +77,9 @@
 
       "encoding": {
           "y": {
-          "field": "VolumeBTC",
+          "field": "BTC Volume Traded",
           "type": "quantitative",
-          "title": "Volume Traded",
+          "title": "",
           "axis": {
             "grid": true,            
             "labelColor":"black",
@@ -109,7 +107,7 @@
 
       "encoding": {
           "y": {
-          "field": "VolumeGold",
+          "field": "Gold Volume Traded",
           "type": "quantitative",
           "title": "",
           "axis": {
