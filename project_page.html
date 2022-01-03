@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 
-<!-- Jamie Broadhurst -> Data Science 2021 -->
-
+<!-- Jamie Broadhurst -> Data Science Project 2021/22 -->
 
 <!-- ///////////////////  HEAD //////////////////////////////////// -->
-
 <head>
 
 <!-- Page title -->
@@ -27,18 +25,14 @@
 <link rel="shortcut icon" href="IMG_0549.jpg" />
 <link rel="apple-touch-icon" href="IMG_0549.jpg" />
            
-
 </head>
-
-<!-- ///////////////////  HEAD //////////////////////////////////// -->
-
+<!-- ///////////////////  END HEAD //////////////////////////////////// -->
 
 <!-- ///////////////////  START BODY //////////////////////////////////// -->
-
 <body>
 
-<!--Navigation bar and title-->
-      <container class="hcontainer">
+<!--Page title-->
+<container class="hcontainer">
 <header>
 <div class="wrap">
   <h1>Data<span style="color: #2400c7">Science: </span><span style="color: #298200">My Project</span></h1>
@@ -47,27 +41,25 @@
   <p id="rubric" class="rubric">Project portfolio using data from: <a class="darkButton" href="https://www.coinapi.io/">CoinAPI</a>and <a class="darkButton" href="https://www.investing.com/">Investing.com</a>.</p>
   <span style="display:block; height: 10px;"></span>
 </div>
-    </header>
-  </container>
+</header>
+</container>
 
-<!--Navigation buttons-->
+<!--Navigation bar and buttons to other pages-->
 <div class="multi-button">
   <button onclick="location.href='index.html'">Assignments</button>
   <button style="color: rgb(222, 151, 242);" onclick="location.href='project_page.html'">Project</button>
   <button onclick="location.href='crypto_fun.html'">Crypto Dashboard</button>
   <button onclick="location.href='https://github.com/jamiebbb/jamiebbb.github.io'">Github</button>
 </div>
-           
-<h4>Can Bitcoin really be considered digital Gold? </h4> 
- <!--- <container class="bcontainer"> 
-  <h2 style="margin-top: 22px; margin-bottom: 22px; font-style: italic;">Soon to come...</h2>
- </container>   ----->                    
+
+<!--Project title with rainbow border -->     
+<h4>Can Bitcoin really be considered digital Gold? </h4>                   
            
  <!--- Section 1: BTC long run price vs Volume Traded --->           
 <p class="bodyText"><span style="color: rgb(219, 188, 188); font-weight: 1000;">Bitcoin:</span> Price and Volume since 2010</p>
 <container class="bcontainer">    
            
-    <!--BTC price chart from investing.com. Data cleaned in Python. Link to colab notebook: -->
+<!--BTC price chart from investing.com. Data cleaned in Python. Link to colab notebook: -->
 <div class="chart" id="chart1">
   <script>
     var myChart1 = "project_json/btc_longrun.json";
@@ -134,7 +126,6 @@
 </footer>
 
 </body>
-
 <!-- ///////////////////  END BODY //////////////////////////////////// -->
 
 </html>
