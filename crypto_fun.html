@@ -2,10 +2,12 @@
 
 <!-- Jamie Broadhurst -> Data Science 2021 -->
 
-
 <!-- ///////////////////  HEAD //////////////////////////////////// -->
-
 <head>
+           
+<!-- To allow mobile-first --> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
 
 <!--The next three lines allow the Vega embed-->
 <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
@@ -13,16 +15,16 @@
 <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
            <title>Crypto Dashboard</title>
 
-
+<!-- Link to style sheet --> 
 <link rel="stylesheet" href="index.css">
+           
        <!---- Favicon ---->
 <link rel="icon" href="IMG_0549.jpg">
 <link rel="shortcut icon" href="IMG_0549.jpg" />
 <link rel="apple-touch-icon" href="IMG_0549.jpg" />
 
 </head>
-
-<!-- ///////////////////  HEAD //////////////////////////////////// -->
+<!-- ///////////////////  END HEAD //////////////////////////////////// -->
 
 
 <!-- ///////////////////  START BODY //////////////////////////////////// -->
@@ -43,18 +45,17 @@
   </container>
 
 <!--Navigation buttons-->
+<container class="hcontainer" style="border-bottom: none;">
 <div class="multi-button">
   <button onclick="location.href='index.html'">Assignments</button>
   <button onclick="location.href='project_page.html'">Project</button>
   <button style="color: rgb(222, 151, 242);" onclick="location.href='crypto_fun.html'">Crypto Dashboard</button>
   <button onclick="location.href='https://github.com/jamiebbb/jamiebbb.github.io'">Github</button>
   <button onclick="location.href='https://rapidcharts.io/datascience'">Course</button>
-  <button onclick="location.href='https://rapidcharts.io/library'">About Me</button>
 </div>
+           </container>
 
-
-<!--Crypto content should go here-->
-      
+<!--Crypto content should go here-->  
  <p class="bodyText"><span style="color: rgb(219, 188, 188); font-weight: 700;">Live tickers: </span>Largest market cap</p>       
  <container class="bcontainer"> 
      <div class="nomics-ticker-widget" data-name="Bitcoin" data-base="BTC" data-quote="GBP"></div><script src="https://widget.nomics.com/embed.js"></script>
