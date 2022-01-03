@@ -1,0 +1,75 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A daily price chart for Gold in-line JSON",
+  "title": {
+    "text": "Gold: Live Price (USD)",
+    "subtitle":"Daily Gold (1 Troy Ounce) Price. Source: MetalsAPI",
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":12,
+    "anchor": "start",
+    "color": "#FFD700",
+    "subtitleColor":"#FFD700"},
+
+"transform": [
+      {"calculate": "1/datum.rate", "as": "price"}
+      ],
+
+
+  "height": 300,
+  "width": "container",
+  "data": {
+    "values": [
+      {"date": "2021-12-01", "rate": 0.00056451324}, 
+      {"date": "2021-12-02", "rate": 0.0005613366}, 
+      {"date": "2021-12-03", "rate": 0.0005654972}, 
+      {"date": "2021-12-04", "rate": 0.00056107854}, 
+      {"date": "2021-12-05", "rate": 0.00056141514}, 
+      {"date": "2021-12-06", "rate": 0.00056146563}, 
+      {"date": "2021-12-07", "rate": 0.00056129172}, 
+      {"date": "2021-12-08", "rate": 0.0005605376}, 
+      {"date": "2021-12-09", "rate": 0.00056146002}, 
+      {"date": "2021-12-10", "rate": 0.00056310697}, 
+      {"date": "2021-12-11", "rate": 0.00056107293}, 
+      {"date": "2021-12-12", "rate": 0.0005615049},
+      {"date": "2021-12-13", "rate": 0.00056132538}, 
+      {"date": "2021-12-14", "rate": 0.00056028}, 
+      {"date": "2021-12-15", "rate": 0.0005641974}, 
+      {"date": "2021-12-16", "rate": 0.00056248894}, 
+      {"date": "2021-12-17", "rate": 0.00055614456}, 
+      {"date": "2021-12-18", "rate": 0.00055621128}, 
+      {"date": "2021-12-19", "rate": 0.0005563058}, 
+      {"date": "2021-12-20", "rate": 0.0005553885},
+      {"date": "2021-12-21", "rate": 0.00055814508}, 
+      {"date": "2021-12-22", "rate": 0.00055921801}, 
+      {"date": "2021-12-23", "rate": 0.00055426038}, 
+      {"date": "2021-12-24", "rate": 0.00055334286}, 
+      {"date": "2021-12-25", "rate": 0.00055445428}, 
+      {"date": "2021-12-26", "rate": 0.00055423268}, 
+      {"date": "2021-12-27", "rate": 0.00055306083}, 
+      {"date": "2021-12-28", "rate": 0.00055251336}, 
+      {"date": "2021-12-29", "rate": 0.00055308848}, 
+      {"date": "2021-12-30", "rate": 0.00055431578}, 
+      {"date": "2021-12-31", "rate": 0.00055124795}, 
+      {"date": "2022-01-01", "rate": 0.00054750324}, 
+      {"date": "2022-01-02", "rate": 0.00054740478},
+
+      {"date": "2022-01-03", "rate": 0.00054740478},
+      {"date": "2022-01-04", "rate": 0.00054750324}, 
+      {"date": "2022-01-05", "rate": 0.00054740478},
+      {"date": "2022-01-06", "rate": 0.00054740478},
+      {"date": "2022-01-07", "rate": 0.00054750324}, 
+      {"date": "2022-01-08", "rate": 0.00054740478},
+      {"date": "2022-01-09", "rate": 0.00054740478}
+    ]
+  },
+  "mark": {
+    "type": "line",
+    "interpolate": "monotone",
+    "color": "darkred",
+    "tooltip": true
+  },
+  "encoding": {
+    "x": {"field": "date", "type": "temporal", "axis": {"labelAngle": 0}, "title": "Date"},
+    "y": {"field": "price", "type": "quantitative", "title": "Gold Price"}
+  }
+}
