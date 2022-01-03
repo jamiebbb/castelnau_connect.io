@@ -179,8 +179,6 @@ footer {
     display: flex;
     width: 100%;
     flex-wrap: wrap;
-    flex-direction: row;
-    align-items: baseline;
   }
   
   .multi-button button {
