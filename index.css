@@ -241,7 +241,7 @@ footer {
   }
   .chart {
     min-width: 350px;
-    padding: 10px;
+    padding: 10px
   }
   .chart:hover {
     border-color: rgb(104, 5, 242);
