@@ -1,0 +1,56 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+  "description": "A daily price chart for BTC using coinapi.io. Had to sign up for another API key as had reached my maximum requests due to my portfolio of assignments",
+
+   "title": {
+    "text": "Bitcoin: Live Price (USD)",
+    "fontSize": 20,
+    "subtitle":"Daily Bitcoin Price from December 1st to January 10th. Source: coinapi.io",
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":12,
+    "anchor": "start",
+    "color": "#F7931A",
+    "subtitleColor":"#F7931A"},
+
+  "config": {
+    "background":"#ffffff",
+    "view": {
+      "stroke": "transparent"}},
+ 
+  
+  "data": {
+    "url": "https://rest.coinapi.io/v1/exchangerate/BTC/USD/history?apikey=5DA95036-5D9C-4FF9-8331-01C165D3F49F&period_id=1DAY&time_start=2021-12-01T00:00:00&time_end=2022-01-10T00:00:00&limit=100",
+    "format": {"type": "json"}},
+  
+
+  "height": 300,
+  "width": "container",
+  
+
+  "mark": {
+    "type": "line",
+    "interpolate": "monotone",
+    "tooltip": true,
+    "color":"darkred"
+  },
+
+  "encoding": {
+    "x": {
+      "field": "time_period_end",
+      "type": "temporal",
+      "axis": {
+        "title": "",
+        "labelAngle": 45,
+        "labelColor":"#F7931A"
+      }},
+
+    "y": {
+      "field": "rate_close",
+      "type": "quantitative",
+      "title": "",
+      "axis": {
+        "format":"$,.5"}
+        }
+     }
+}
