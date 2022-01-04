@@ -261,4 +261,9 @@ footer {
     padding: 1px;
     gap: 10px 10px
   }
+  .bcontainerproject {
+    border-style: none;
+    padding: 1px;
+    gap: 10px 10px
+  }
 }
