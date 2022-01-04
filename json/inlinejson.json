@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "A simple bar chart with embedded data.",
   "title": {
-    "text": "Cumulative Antibody Tests in UK",
+    "text": "Cumulative Antibody Tests in the UK",
     "anchor": "start",
     "subtitle": "In-line JSON: 5 observations",
     "subtitleFontSize": 10,
