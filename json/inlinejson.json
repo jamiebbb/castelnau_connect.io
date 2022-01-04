@@ -6,6 +6,7 @@
     "anchor": "start",
     "subtitle": "In-line JSON: 5 observations",
     "subtitleFontSize": 10,
+    "subtitleFontStyle":"italic",
     "color": "black"
   },
   "height": 300,
