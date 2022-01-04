@@ -7,11 +7,10 @@
   "height": 300,
   "width": "container",
   "title": {
-    "text": "Linear regression: Ethereum Price on Silver Price (USD)",
-    "fontSize": 20,
-    "subtitle": "Monthly data from Yahoo Finance and Investing.com, 01/09/15 - 01/10/21",
+    "text": "Linear regression: Ethereum on Silver",
+    "subtitle": "Monthly price (USD) data from Yahoo Finance (ETH) and Investing.com (SIL), 01/09/15 - 01/10/21",
     "subtitleFontStyle":"italic",
-    "subtitleFontSize":12,
+    "subtitleFontSize":10,
     "subtitleColor":"#2417db9c",
     "anchor": "start"
   },
