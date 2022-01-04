@@ -1,8 +1,10 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "Cumulative Antibody Tests (added false observation)",
+    "text": "Cumulative Antibody Tests in the UK",
     "anchor": "start",
+    "subtitle": "Added a false observation",
+    "subtitleFontSize": 10,
     "color": "black"
   },
   "height": 300,
@@ -17,7 +19,7 @@
     "color": "mediumvioletred"
   },
   "encoding": {
-    "x": {"field": "date", "type": "temporal", "axis": {"labelAngle": 0, "grid": true}, "title": "Date"},
-    "y": {"field": "cumAntibodyTestsByPublishDate", "type": "quantitative", "axis": {"grid": true}, "title": "Antibody Tests"}
+    "x": {"field": "date", "type": "temporal", "axis": {"labelAngle": 0, "grid": true}, "title": ""},
+    "y": {"field": "cumAntibodyTestsByPublishDate", "type": "quantitative", "axis": {"grid": true}, "title": ""}
   }
 }
