@@ -104,18 +104,6 @@ header {
   border-radius: 25px;
 }
 
-.bcontainerproject {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;;
-    gap: 30px 30px;
-    padding: 20px;
-    border-radius: 25px;
-    margin-top: 30px;
-    border-style: solid;
-    border-color: white;
-}
-
 .chart{
     background-color: white;
     border-style: solid;
@@ -259,11 +247,6 @@ footer {
     border-color: rgb(104, 5, 242);
   }
   .bcontainer {
-    border-style: none;
-    padding: 1px;
-    gap: 10px 10px
-  }
-  .bcontainerproject {
     border-style: none;
     padding: 1px;
     gap: 10px 10px
