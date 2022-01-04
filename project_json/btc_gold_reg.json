@@ -7,11 +7,10 @@
   "height": 300,
   "title": {
     "text": "Linear regression: Bitcoin against Gold",
-    "fontSize": 20,
     "color": "#0f3b06",
     "subtitle": "Weekly Average Close Price (USD). Data from Investing.com, cleaned in Python. 25/07/10 - 12/12/21",
     "subtitleFontStyle":"italic",
-    "subtitleFontSize":12,
+    "subtitleFontSize":10,
     "subtitleColor":"#2bea05",
     "anchor": "start"
   },
