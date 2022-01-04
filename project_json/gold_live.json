@@ -4,7 +4,7 @@
   "title": {
     "text": "Gold: Live Price (USD)",
     "fontSize": 20,
-    "subtitle":"Daily Gold (1 Troy Ounce) Price up to 10th January. Source: MetalsAPI",
+    "subtitle":"Daily Gold (1 Troy Ounce) Price from December 1st to January 10th. Source: MetalsAPI",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":12,
     "anchor": "start",
