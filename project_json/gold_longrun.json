@@ -5,9 +5,8 @@
  "title": {
   "text": "Gold: Price vs Volume",
   "subtitle":"Weekly Gold (1 Troy Ounce) Close Price (USD) against Volume Traded. Source: Investing.com",
-  "fontSize": 20,
   "subtitleFontStyle":"italic",
-  "subtitleFontSize":12,
+  "subtitleFontSize":10,
   "color": "#FFD700",
   "subtitleColor":"#FFD700",
   "anchor": "start"
