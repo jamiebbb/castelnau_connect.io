@@ -5,9 +5,8 @@
  "title": {
   "text": "Bitcoin (BTC): Price vs Volume",
   "subtitle":"Weekly BTC Close Price (USD) against Volume Traded. Source: Investing.com",
-  "fontSize": 20,
   "subtitleFontStyle":"italic",
-  "subtitleFontSize":12,
+  "subtitleFontSize":10,
   "color": "#F7931A",
   "subtitleColor":"#F7931A",
   "anchor": "start"
