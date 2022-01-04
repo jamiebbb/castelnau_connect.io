@@ -12,13 +12,13 @@
    
 
     "title": {
-    "text": "Favourite cryptos by market cap",
+    "text": "Favourite cryptocurrencies by market cap (USD)",
     "anchor": "start",
     "color": "#000000",
-    "subtitle":"My favourite currencies by market cap, $ billion. Source: nomics.api",
+    "subtitle":"Live market cap. Source: nomics.api",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
-    "subtitleColor":"#1793db"
+    "subtitleColor":"#a0db17"
     
   },
 
@@ -29,7 +29,7 @@
  "transform":[
       {"filter": {
         "field": "currency", 
-        "oneOf": ["SHIB", "UNI", "DOGE", "DOT", "XLM", "LINK", "EOS", "SAFEMOON", "ALGO"]}
+        "oneOf": ["SHIB", "UNI", "DOGE", "DOT", "XLM", "LINK", "EOS", "SFM", "ALGO"]}
         }
         ,
     {"calculate": "datum.market_cap/1000000000", "as": "mktCapb"}
