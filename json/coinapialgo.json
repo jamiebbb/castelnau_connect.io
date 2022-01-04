@@ -4,8 +4,8 @@
   "description": "",
 
    "title": {
-    "text": "Algorand: 10 DAY Average Price",
-    "subtitle":"From July-19. Source: coinapi.io",
+    "text": "Algorand: 10 day Average Price",
+    "subtitle":"From January-21. Source: coinapi.io",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "start",
@@ -19,7 +19,7 @@
  
   
   "data": {
-    "url": "https://rest.coinapi.io/v1/exchangerate/ALGO/USD/history?apikey=AAB3A57B-7D91-4EA7-9C8C-6211E2F7CEDF&period_id=10DAY&time_start=2019-07-01T00:00:00&time_end=2022-02-01T00:00:00&limit=100",
+    "url": "https://rest.coinapi.io/v1/exchangerate/ALGO/USD/history?apikey=AAB3A57B-7D91-4EA7-9C8C-6211E2F7CEDF&period_id=10DAY&time_start=2021-01-01T00:00:00&time_end=2022-02-01T00:00:00&limit=100",
     "format": {"type": "json"}},
   
 
@@ -39,7 +39,7 @@
       "field": "time_period_end",
       "type": "temporal",
       "axis": {
-        "title": "Date",
+        "title": "",
         "grid": true,
         "labelSeparation": 10,
         "domainColor":"dimgrey",
