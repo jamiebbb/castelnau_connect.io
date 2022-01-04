@@ -1,20 +1,47 @@
 {
-  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "data": {
     "url": "https://raw.githubusercontent.com/jamiebbb/jamiebbb.github.io/main/project_data/assets_scores.csv"
   },
   "width": "container",
   "height": 300,
   "title": {
-    "text": "Linear regression: Bitcoin Weekly Close Price against Gold Weekly Close Price",
+    "text": "Linear regression: Bitcoin against Gold",
     "fontSize": 20,
-    "color": "cornflowerblue",
-    "subtitle": "Weekly Average Close Price (USD) data from Investing.com, cleaned in Python. 25/07/10 - 12/12/21",
+    "color": "#0f3b06",
+    "subtitle": "Weekly Average Close Price (USD). Data from Investing.com, cleaned in Python. 25/07/10 - 12/12/21",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":12,
-    "subtitleColor":"#170da49c",
+    "subtitleColor":"#2bea05",
     "anchor": "start"
   },
+
+"transform": [
+{"calculate": "year(datum.Date)", "as":"year"},
+{"filter": "datum.year>=minYear"},
+{"filter": "datum.year<=maxYear"}
+],
+
+"params": [    
+      {"name":"minYear", "value":2010,
+         "bind":{
+           "input": "range",
+           "min": 2010, 
+           "max": 2021, 
+           "step": 1,
+           "name": "Start year:"}
+      },
+  
+      {"name":"maxYear", "value":2021,
+         "bind":{
+           "input": "range",
+           "min": 2010, 
+           "max": 2021, 
+           "step": 1,
+           "name": "End year:"}
+      }
+    ],
+
   "layer": [
     {
       "mark": {
@@ -26,18 +53,20 @@
         "x": {
           "field": "CloseBTC",
           "type": "quantitative",
-          "title": "Bitcoin Price",
+          "title": "Bitcoin",
           "axis": {
             "domain": true,
+            "labelColor": "#F7931A",
             "format": "$,.5"
           }
         },
         "y": {
           "field": "CloseGold",
           "type": "quantitative",
-          "title": "Gold Price",
+          "title": "Gold",
           "axis": {
             "domain": true,
+            "labelColor": "#FFD700",
             "format": "$,.5"
           }
         }
