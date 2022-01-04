@@ -41,7 +41,7 @@
       "field": "Date",
       "type": "ordinal",
       "axis": {
-        "title": "Date",
+        "title": "",
         "grid": false,
         "labelSeparation": 10,
         "domainColor":"dimgrey",
