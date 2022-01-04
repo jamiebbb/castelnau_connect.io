@@ -5,6 +5,7 @@
     "anchor": "start",
     "subtitle": "Added a false observation",
     "subtitleFontSize": 10,
+    "subtitleFontStyle":"italic",
     "color": "black"
   },
   "height": 300,
