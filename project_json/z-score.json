@@ -6,15 +6,14 @@
  "title": {
   "text": "Weekly Price: Z-Score Standardisation",
   "subtitle":"BTC and Gold Close Price (USD) Standardised in Python. Source: Investing.com",
-  "fontSize": 20,
   "subtitleFontStyle":"italic",
-  "subtitleFontSize":12,
+  "subtitleFontSize":10,
   "color": "#0f3b06",
   "subtitleColor":"#2bea05",
   "anchor": "start"
   },
 
-  "height":250,
+  "height":300,
 
 
 
