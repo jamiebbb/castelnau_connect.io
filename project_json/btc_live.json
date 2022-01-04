@@ -5,10 +5,9 @@
 
    "title": {
     "text": "Bitcoin: Live Price (USD)",
-    "fontSize": 20,
     "subtitle":"Daily Bitcoin Price from December 1st to January 10th. Source: coinapi.io",
     "subtitleFontStyle":"italic",
-    "subtitleFontSize":12,
+    "subtitleFontSize":10,
     "anchor": "start",
     "color": "#F7931A",
     "subtitleColor":"#F7931A"},
