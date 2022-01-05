@@ -64,12 +64,6 @@
  </h3>
 </container>
            
-<!-- 2) The data you used and how you accessed it, including notes on automation and replication; -->     
-<container class="bcontainerproject">    
-           <h3> The data used throughout this project are from the three data sources listed at the top of the page. I had to sign up for coinAPI and metalsAPI, so I could access their respective API keys for use in my live price charts. Bitcoin’s live price graph uses coinAPI and will automatically update as the API link was included in the Vega specification. Whereas, the live Gold price graph uses data from metalsAPI and is written in-line JSON to display another skill I have learned. 
-<br> <br>The rest of the graphs use data that I scraped using Python in Colab from investing.com. Using the investpy software library, I was able to easily access data for both Bitcoin and Gold from 2010. Utilising the Python script, I wrote, the majority of the process is automated which means my graphs can be updated in a matter of minutes with new data. I decided to use this website over Yahoo Finance as there was a larger dataset available for Bitcoin which traces back to August 2010 whereas Yahoo only has data going back to September 2014. 
-</h3>
-</container>
   
  <!--- Section 0: BTC live price since Dec 1st and Gold live price since Dec 1st (in-line JSON) --->           
 <p class="bodyText"><span style="color: rgb(219, 188, 188); font-weight: 1000;">Bitcoin and Gold:</span> Live Price</p>
@@ -93,6 +87,12 @@
 </container>       
               <!------- END SECTION 0 ---------->
 
+           <!-- 2) The data you used and how you accessed it, including notes on automation and replication; -->     
+<container class="bcontainerproject">    
+           <h3> The data used throughout this project are from the three data sources listed at the top of the page. I had to sign up for coinAPI and metalsAPI, so I could access their respective API keys for use in my live price charts. Bitcoin’s live price graph uses coinAPI and will automatically update as the API link was included in the Vega specification. Whereas, the live Gold price graph uses data from metalsAPI and is written in-line JSON to display another skill I have learned. 
+<br> <br>The rest of the graphs use data that I scraped using Python in Colab from investing.com. Using the investpy software library, I was able to easily access data for both Bitcoin and Gold from 2010. Utilising the Python script, I wrote, the majority of the process is automated which means my graphs can be updated in a matter of minutes with new data. I decided to use this website over Yahoo Finance as there was a larger dataset available for Bitcoin which traces back to August 2010 whereas Yahoo only has data going back to September 2014. 
+</h3>
+</container>
            
  <!--- Section 1: BTC long run price vs Volume Traded --->           
 <p class="bodyText"><span style="color: rgb(219, 188, 188); font-weight: 1000;">Bitcoin:</span> Long Run Price and Volume since 2010</p>
