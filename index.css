@@ -104,12 +104,13 @@ header {
   border-radius: 25px;
 }
 
- .bcontainerproject {
+ .bcontainerwriteup {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;;
   gap: 30px 30px;
-  margin-top: 20px;
+  margin-top: 40px;
+  margin-bottom: -15px;
   border-style: dashed;
   border-color: black;
   padding: 20px;
@@ -262,7 +263,7 @@ footer {
     padding: 1px;
     gap: 10px 10px
   }
-  .bcontainerproject {
+  .bcontainerwriteup {
     border-style: none;
     padding: 1px;
     gap: 10px 10px
