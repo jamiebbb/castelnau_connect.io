@@ -48,7 +48,6 @@ h3 {
     margin-top: 0px;
     margin-bottom: 0px;
     font-family: 'Poppins', sans-serif;
-
 }
 
 h4 {
@@ -63,8 +62,7 @@ h4 {
     border-radius: 10px;
     border-style: groove;
     border-width: 8px;
-}
-    
+}    
 
 p {
     color: #9101D8;
@@ -73,7 +71,6 @@ p {
     font-weight: lighter;
     margin-top: -7px;
     margin-bottom: 7px;
-
 }
 
 .hcontainer {
@@ -91,8 +88,7 @@ header {
 }
 /* --------------------------------------- END HEADER CONTENT --------------------------------------*/
 
-
-/* ------------------------------ BODY CONTENT -------------------------------- PARTLY INSPIRED BY TAHA ADAMALY [FLEX BOXES/FLEX-GROW] */
+/* ------------------------------ BODY CONTENT -------------------------------- */
 
 .bcontainer {
   display: flex;
@@ -102,6 +98,18 @@ header {
   margin-top: 30px;
   border-style: solid;
   border-color: white;
+  padding: 20px;
+  border-radius: 25px;
+}
+
+ .bcontainerproject {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;;
+  gap: 30px 30px;
+  margin-top: 20px;
+  border-style: dashed;
+  border-color: black;
   padding: 20px;
   border-radius: 25px;
 }
@@ -118,7 +126,6 @@ header {
     width: 45%;
     min-width: 350px;
 }
-
 
 #firstChart, #sixteenthChart, #seventeenthChart, #eighteenthChart, #nineteenthChart, #chart1, #chart2, #chart5{
   background-color: white;
@@ -249,6 +256,11 @@ footer {
     border-color: rgb(104, 5, 242);
   }
   .bcontainer {
+    border-style: none;
+    padding: 1px;
+    gap: 10px 10px
+  }
+  .bcontainerproject {
     border-style: none;
     padding: 1px;
     gap: 10px 10px
