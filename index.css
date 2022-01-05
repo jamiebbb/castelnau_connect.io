@@ -42,25 +42,25 @@ h2 {
 }
 
 h3 {
-    color: #33DAFF;
+    color: #cf4646;
     font-weight: lighter;
-    font-size: 15px;
     font-size: 20px;
-    margin-top: -55px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 h4 {
     color: #F7931A; /*Bitcoin colour*/
-    font-size: 40px;
-    margin-top: 20px;
-    margin-bottom: -30px;
+    font-size: 45px;
+    margin-top: 40px;
+    margin-bottom: 40px;
     font-weight: bold;
     text-align: center;
     animation: border-pulsate 2s infinite;
     border-color: orange;
     border-radius: 10px;
     border-style: groove;
-    border-width: 5px;
+    border-width: 8px;
 }
     
 
