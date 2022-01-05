@@ -46,7 +46,8 @@
       "mark": {
         "type": "circle",
         "filled": true,
-        "tooltip": true
+        "tooltip": true,
+        "opacity": 0.35
       },
       "encoding": {
         "x": {
