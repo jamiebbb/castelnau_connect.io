@@ -48,6 +48,8 @@ h3 {
     margin-top: 0px;
     margin-bottom: 0px;
     font-family: 'Poppins', sans-serif;
+    text-align: center;
+    text-shadow: 0 0 #3fff00;
 }
 
 h4 {
