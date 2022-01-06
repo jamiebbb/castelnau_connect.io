@@ -3,8 +3,8 @@
 
 
  "title": {
-  "text": "Bitcoin (BTC): Price vs Volume",
-  "subtitle":"Weekly BTC Close Price (USD) against Volume Traded. Source: Investing.com",
+  "text": "Bitcoin (BTC): Price (USD) and Volume",
+  "subtitle":"Average Weekly BTC Close Price and Volume Traded. Source: Investing.com",
   "subtitleFontStyle":"italic",
   "subtitleFontSize":10,
   "color": "#F7931A",
