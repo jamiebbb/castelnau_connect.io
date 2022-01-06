@@ -58,13 +58,14 @@
 <!-- 1) The aims of your project; -->     
 <container class="bcontainerwriteup">    
 <h3>
-           The aim of this project is to see whether Bitcoin can really be considered digital Gold. To do this, I will look at the recent prices of both assets and look at their correlation since 2010. For this project to be a success, it is vital to define what digital Gold would look in a hypothetical state.
+          The aim of this project is to see whether Bitcoin can really be considered digital Gold. For this project to be a success, it is vital to define what digital Gold would look in a hypothetical state.
 <br> <br>
-           I believe this would be characterised by an asset that is of course digital, implying it is easy to transport and that it can be used via technology, i.e., a phone or computer. 
+          I believe this would be characterised by an asset that is of course digital, implying it is easy to transport and can be used via technology. 
 <br> <br>
-           More importantly, what is Gold? Gold is tangible and has been used as a medium of exchange for centuries. It has intrinsic value; this inherent value is derived from its scarcity so; it has a finite supply.
+          More importantly, what is Gold? Gold is tangible and has been used as a medium of exchange for centuries. It has intrinsic value; this inherent value is derived from its scarcity.
 <br> <br>
-           Nowadays, due to its characteristics, it is considered an inflation hedge and a safe haven asset as, over the years Gold has risen in value with the ever-rising cost of living. Therefore, my interpretation of Gold is an asset that is a secure, relatively predictable investment which is backed by physical bullions. These bullions will always have value as they can be melted down and used in jewellery, semiconductors, and even medicine, to name a few use cases. 
+          Nowadays, due to its characteristics, it is considered an inflation hedge and a safe-haven asset as, over the years Gold has risen in value with the ever-rising cost of living. 
+          Therefore, my interpretation of Gold is an asset that is a secure, relatively predictable investment which is backed by physical bullions. These bullions will always have value as they can be melted down and used in jewellery, semiconductors, and even medicine, to name a few use cases.
 </h3>
 </container>    
            
@@ -93,11 +94,11 @@
            
 
 <!-- 2) The data you used and how you accessed it, including notes on automation and replication; -->     
-<container class="bcontainerwriteup">    
-<h3> 
-           The data used throughout this project are from the three data sources listed at the top of the page. I had to sign up for CoinAPI and MetalsAPI, so I could access their respective API keys for use in my live price charts. Bitcoin’s live price graph uses <a class="darkButton" href="https://rest.coinapi.io/v1/exchangerate/BTC/USD/history?apikey=AAB3A57B-7D91-4EA7-9C8C-6211E2F7CEDF&period_id1DAY&time_start=2021-12-01T00:00:00&time_end=2022-01-10T00:00:00&limit=100">data</a> from CoinAPI and will automatically update as the API link was included in the Vega specification. Whereas the live Gold price graph uses <a class="darkButton" href="https://metals-api.com/api/timeseries?access_key=l7l8qq8917cannod4zqw1648f6c260mvbkix14zyv0pc91jeko0tftez2lc9&start_date=2021-12-01&end_date=2022-01-10&base=USD&symbols=XAU">data</a> from MetalsAPI and is written in-line JSON to display another skill I have learned. 
+<container class="bcontainerwriteup">        
+<h3>
+           The data used throughout this project is from three data sources. I signed up for CoinAPI and MetalsAPI so I could access their respective API keys, for use in my live price charts. Bitcoin’s live price graph uses <a class="darkButton" href="https://rest.coinapi.io/v1/exchangerate/BTC/USD/history?apikey=AAB3A57B-7D91-4EA7-9C8C-6211E2F7CEDF&period_id1DAY&time_start=2021-12-01T00:00:00&time_end=2022-01-10T00:00:00&limit=100">data</a> from CoinAPI and will automatically update as the API link was included in the Vega specification. Whereas the live Gold price graph uses <a class="darkButton" href="https://metals-api.com/api/timeseries?access_key=l7l8qq8917cannod4zqw1648f6c260mvbkix14zyv0pc91jeko0tftez2lc9&start_date=2021-12-01&end_date=2022-01-10&base=USD&symbols=XAU">data</a> from MetalsAPI and is written in-line JSON.
 <br> <br>
-           The rest of the graphs use data that I scraped using Python in Colab from investing.com. Using the investpy software library, I was able to easily access data for both Bitcoin and Gold. Utilising the Python script, I wrote, most of the process is automated which means my graphs can be updated in a matter of minutes with new data. I decided to use this website over Yahoo Finance as there was a larger dataset available for Bitcoin which traces back to August 2010 whereas Yahoo only has data going back to September 2014. 
+           The rest of the graphs use data that I scraped using Python in Colab from investing.com. Using the investpy software library, I was able to access data for both Bitcoin and Gold. Utilising my Python script, most of the process is automated which means my graphs can be updated in a matter of minutes. I decided to use this website over Yahoo Finance as there was a larger dataset available for Bitcoin which goes back to August 2010 rather than September 2014.           
 </h3>
 </container>
            
@@ -130,6 +131,12 @@
 </container>
    <!------- END SECTION 2 ---------->
            
+   <!------- DESCRIPTION 1 FOR FIRST 4 GRAPHS ---------->    
+<container class="bcontainerwriteup">        
+<h3>
+           As evident from the first two graphs, we can see that even just over the past month Bitcoin’s price has been more volatile than Gold’s. This idea can be furthered if we look at Bitcoin and Gold’s long run price. Bitcoin’s price has risen from $0.1 to a peak of $65,459 on 14th November 2021. Whereas the price of Gold has fluctuated through a relatively small range of $960.46 over the past 11 years.    
+</h3>
+</container>
            
    <!--- Section 3: BTC vs Gold Normalised Prices and Z-Score graph--->           
 <p class="bodyText"><span style="color: rgb(219, 188, 188); font-weight: 1000;">BTC vs Gold:</span> Normalised Prices and Z-Score Graph</p>
@@ -154,17 +161,24 @@
  </container>     
    <!------- END SECTION 3 ---------->
            
+   <!------- DESCRIPTION 2 FOR MIN-MAX AND Z-SCORE GRAPHS ---------->    
+<container class="bcontainerwriteup">    
+<h3> 
+           Looking at the Min-Max and Z-Score graphs, it is evident that the two assets have followed similar price movements from 2018 to 2020, deviating in 2020, at the start of the Coronavirus pandemic, when lots of investors put money into the safe-haven asset – Gold. Through 2021, we can further see Bitcoin’s price volatility as it’s Z-Score swings over x4 that of Gold’s. 
+</h3>
+</container>
+           
            
 <!-- 3) Challenges in data cleaning and analysis, and the tools you used to overcome them; -->     
 <container class="bcontainerwriteup">    
 <h3> 
-           The link to my Colab notebook for all my data analysis is <a class="darkButton" href=" https://colab.research.google.com/drive/1gijxGoskQoGSqWydVFLoHWBYs--MHWPl">here</a>, it is also saved on my GitHub repository.  
+           The link to my Colab notebook for all my data analysis is available <a class="darkButton" href=" https://colab.research.google.com/drive/1gijxGoskQoGSqWydVFLoHWBYs--MHWPl">here.</a>  
 <br> <br>
-           The first challenge I had to overcome was that Gold doesn’t trade everyday like Bitcoin. When I merged the datasets into a Pandas DataFrame there was a mismatch, as Bitcoin had far more observations. To overcome this, I took the weekly average of close prices for both assets from the daily dataset using the .resample function in Python.  
+           The first challenge I had to overcome was that Gold doesn’t trade everyday like Bitcoin. So, when I merged the datasets into a Pandas DataFrame there was a mismatch, as Bitcoin had far more observations. To overcome this, I took the weekly average of close prices for both assets from the daily dataset using the .resample function in Python. 
 <br> <br>
-           Another challenge was with the output from MetalsAPI for the live price of Gold. I decided to replicate the data from the API link in-line JSON due to the output being seemingly incompatible for Vega manipulation. Instead, I manually created an array of data points within Vega. Also, I had to use a calculate function to convert the price of Gold into USD.  
+           Another challenge was with the output from MetalsAPI. I decided to replicate the data from the API link in-line JSON due to the output being seemingly incompatible for Vega manipulation. Instead, I manually created an array of data points within Vega. I also had to use a calculate function to convert the price of Gold into USD.   
 <br> <br>
-           I decided to export the data from Python for the minmax and z-score graphs to a .csv file so I could use the raw GitHub file within Vega. This was so my website looked more consistent throughout, rather than having two .png files arbitrarily placed. Also, the .png files proved tricky to view nicely on a mobile.  
+           I decided to export the data from Python for the Min-Max and Z-Score graphs to a .csv file so I could use the raw GitHub file within Vega. This was so my website looked more consistent throughout, rather than having two .png files arbitrarily placed. Also, the .png files proved tricky to view nicely on a mobile.  
 <br> <br>
            Throughout, I used the Vega documentation to troubleshoot issues with various problems I encountered mostly with performing transforms such as filter and calculate.  
 </h3>
@@ -186,12 +200,18 @@
    <!------- END SECTION 4 ---------->
            
            
+   <!------- DESCRIPTION 3 FOR LINEAR REGRESSION ---------->    
+<container class="bcontainerwriteup">    
+<h3> 
+           The linear regression of Bitcoin against Gold shows an R-Squared value of 0.30 since 2010, suggesting that there is some correlation but, this doesn’t necessarily imply causation. The greatest R-Squared value is 0.53 over the period, 2015-2020, implying that when Bitcoin has a price above $1000 there is a more positive correlation between the weekly price of the two assets. 
+</h3>
+</container>
+           
+           
 <!-- 4) Your conclusions; -->     
 <container class="bcontainerwriteup">    
 <h3> 
-           My conclusion: Whilst Bitcoin does exhibit similar characteristics to Gold such as scarcity, transportability and liquidity, it would be farfetched to consider it digital Gold. This is primarily due to its extreme volatility hence, making it a speculative store of value. 
-<br> <br>
-           Bitcoin has consistently outperformed Gold as an investment over the past 10 years but this depends on when that investment was placed - market timing is key. 
+          Overall, Bitcoin cannot be considered digital Gold since they don’t exhibit similar characteristics. Firstly, it isn’t tangible so lacks inherent value. Secondly, its price volatility is far greater than that of Gold. Yes, it is scarce since there is a fixed supply but it is not a secure, predictable store of value hence, it is a speculative asset. All things considered, it is a much risker investment than Gold. Although it has significantly outperformed Gold over the past 10 years, its value could drive to zero if there was an EMP attack on Earth’s technology. Then, only people with bullions would be able to successfully barter, rendering Bitcoin worthless. 
 </h3>
 </container>
            
