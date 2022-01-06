@@ -95,7 +95,7 @@ header {
 .bcontainer {
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;;
+  justify-content: center;
   gap: 30px 30px;
   margin-top: 30px;
   border-style: solid;
@@ -107,7 +107,7 @@ header {
  .bcontainerwriteup {
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;;
+  justify-content: center;
   gap: 30px 30px;
   margin-top: 40px;
   margin-bottom: -15px;
@@ -248,6 +248,16 @@ footer {
   body {
     max-width: 98%;
   }
+  .bcontainer {
+    border-style: none;
+    padding: 1px;
+    gap: 10px 10px;
+  }
+  .bcontainerwriteup {
+    border-style: none;
+    padding: 1px;
+    gap: 10px 10px;
+  }
   .multi-button button {
     font-size: 1rem;
   }
@@ -257,15 +267,5 @@ footer {
   }
   .chart:hover {
     border-color: rgb(104, 5, 242);
-  }
-  .bcontainer {
-    border-style: none;
-    padding: 1px;
-    gap: 10px 10px
-  }
-  .bcontainerwriteup {
-    border-style: none;
-    padding: 1px;
-    gap: 10px 10px
   }
 }
