@@ -5,7 +5,7 @@
 
    "title": {
     "text": "Bitcoin: Live Price (USD)",
-    "subtitle":"Daily Bitcoin Price from December 1st to January 10th. Source: coinapi.io",
+    "subtitle":"Daily Bitcoin Price from December 1st to January 10th. Source: CoinAPI",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "start",
