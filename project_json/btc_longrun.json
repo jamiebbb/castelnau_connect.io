@@ -92,7 +92,7 @@
           },
             
           "color": {
-            "datum": "Close Price",
+            "datum": "Price",
             "scale": {"range": ["blue", "red"]},
             "legend":{
               "orient": "top-left"}}}
