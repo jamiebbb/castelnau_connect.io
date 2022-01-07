@@ -1,7 +1,7 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   
-    "description": "NOMICS cryptocurrency chart. CORS does not work. Works using the AllOrigins tool, but this then retieved all/more data than expected. As a consequence dta needs to be filtered before charting.",
+    "description": "NOMICS cryptocurrency chart. Used Richard Davies chart on RapidCharts.io for knowledge of AllOrigins tool. This is using my OWN API key that i signed up for. CORS does not work. Works using the AllOrigins tool, but this then retieved all/more data than expected. As a consequence dta needs to be filtered before charting.",
 
     "config": {
       "background":"#ffffff",
