@@ -64,7 +64,7 @@
           I believe this would be characterised by an asset that is of course digital, implying it is easy to transport and can be used via technology. 
           More importantly, what is Gold? Gold is tangible and has been used as a medium of exchange for centuries. It has intrinsic value; this inherent value is derived from its scarcity.
           Nowadays, due to its characteristics, it is considered an inflation hedge and a safe-haven asset as, over the years Gold has risen in value with the ever-rising cost of living. 
-          Therefore, my interpretation of Gold is an asset that is a secure, relatively predictable investment which is backed by physical bullions. These bullions will always have value as they can be melted down and used in jewellery, semiconductors, and even medicine, to name a few use cases.
+          Therefore, my interpretation of Gold is an asset that is a secure, relatively predictable investment which is backed by physical bullions. These bullions will always have value as they can be melted down and used in jewellery, semiconductors, and even medicine, to name a few.
 </h3>
 </container>    
            
@@ -177,9 +177,9 @@
 <h3> 
            The link to my Colab notebook for all my data analysis is available <a class="darkButton" href=" https://colab.research.google.com/drive/1gijxGoskQoGSqWydVFLoHWBYs--MHWPl">here.</a>  
 <br> <br>
-           The first challenge I had to overcome was that Gold doesn’t trade everyday like Bitcoin. So, when I merged the datasets into a Pandas DataFrame there was a mismatch, as Bitcoin had far more observations. To overcome this, I took the weekly average of close prices for both assets from the daily dataset using the .resample() function in Python. 
+           The first challenge I had to overcome was that Gold doesn’t trade everyday like Bitcoin. So, when I merged the datasets into a Pandas DataFrame Bitcoin had far more observations. To overcome this, I took the weekly average of close prices for both assets from the daily dataset using the .resample() function in Python. 
 <br> <br>
-           Another challenge was with the output from MetalsAPI. I decided to replicate the data from the API link in-line JSON due to the output being seemingly incompatible for Vega manipulation. Instead, I manually created an array of data points within Vega. I also had to use a calculate function to convert the price of Gold into USD.   
+           Another challenge was with the output from MetalsAPI. I decided to replicate the data from the API link in-line JSON due to the output being incompatible for Vega manipulation. Instead, I manually created an array of data points within Vega. I also had to use a calculate function to convert the price of Gold into USD.   
 <br> <br>
            I decided to export the data from Python for the Min-Max and Z-Score graphs to a .csv file so I could use the raw GitHub file within Vega. This was so my website looked more consistent throughout. Also, the .png files proved tricky to view nicely on a mobile.  
 <br> <br>
@@ -206,7 +206,7 @@
    <!------- DESCRIPTION 3 FOR LINEAR REGRESSION ---------->    
 <container class="bcontainerwriteup">    
 <h3> 
-           The linear regression of Bitcoin against Gold shows an R-Squared value of 0.30 since 2010, suggesting that there is some correlation but, this doesn’t necessarily imply causation. The greatest R-Squared value is 0.53 over the period, 2015-2020, implying that when Bitcoin has a price above $1,000 there is a greater positive correlation in the weekly price of the two assets. 
+           The linear regression of Bitcoin against Gold shows an R-Squared value of 0.30 since 2010, suggesting that there is some correlation but, this doesn’t necessarily imply causation. The greatest R-Squared value is 0.53 over the period, 2015-2020, implying that when Bitcoin has a price above $1,000 there is greater correlation between the average weekly close price of the two assets. 
 </h3>
 </container>
            
@@ -215,9 +215,14 @@
 <container class="bcontainerwriteup">    
 <h3> 
           Overall, Bitcoin cannot be considered digital Gold since they don’t exhibit similar characteristics. Firstly, it isn’t tangible so lacks inherent value. Secondly, its price volatility is far greater than that of Gold. Yes, it is scarce since there is a fixed supply but it is not a secure, predictable store of value hence, it is a speculative asset. All things considered, it is a much risker investment than Gold. Although it has significantly outperformed Gold over the past 10 years, its value could drive to zero if there was an EMP attack on Earth’s technology. Then, only people with physical bullions would be able to successfully barter, rendering Bitcoin worthless. 
+<br> <br>
+          Note: Further analysis could be completed if intraday data was available for both assets. 
 </h3>
 </container>
-           
+
+<p> 
+           Total word count - 837. 
+</p>
 
 <!--Footer, to add a buffer at the bottom of the page-->
 <footer>
