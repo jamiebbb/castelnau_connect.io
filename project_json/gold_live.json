@@ -14,9 +14,9 @@
       {"calculate": "1/datum.rate", "as": "price"}
       ],
 
-
   "height": 300,
   "width": "container",
+
   "data": {
     "values": [
       {"date": "2021-12-01", "rate": 0.00056451324}, 
@@ -53,24 +53,30 @@
       {"date": "2022-01-01", "rate": 0.00054745948}, 
       {"date": "2022-01-02", "rate": 0.00054724068},
       {"date": "2022-01-03", "rate": 0.00055451522},
-      {"date": "2022-01-04", "rate": 0.00055143529}, 
+      {"date": "2022-01-04", "rate": 0.0005540831}, 
       {"date": "2022-01-05", "rate": 0.00055154549},      
       {"date": "2022-01-06", "rate": 0.00055230912},
-      
-      {"date": "2022-01-07", "rate": 0.00055230912}, 
-      {"date": "2022-01-08", "rate": 0.00055230912},
-      {"date": "2022-01-09", "rate": 0.00055230912}
+      {"date": "2022-01-07", "rate": 0.0005581674}, 
+      {"date": "2022-01-08", "rate": 0.00055736271},
+      {"date": "2022-01-09", "rate": 0.00055644494}
     ]
   },
+  
   "mark": {
     "type": "line",
     "interpolate": "monotone",
-    "color": "darkred",
-    "tooltip": true
-  },
+    "color": "darkred"},
+
   "encoding": {
-    "x": {"field": "date", "type": "temporal", "axis": {"labelAngle": 45, "labelColor": "#FFD700"}, "title": ""},
-    "y": {"field": "price", "type": "quantitative", "title": "", 
+    "x": {"field": "date", "type": "temporal", "axis": {"labelAngle": 45, "labelColor": "#FFD700"}, "title": null},
+
+    "y": {"field": "price", "type": "quantitative", "title": null, 
     "axis": {
-      "format": "$,.5"}}}
-}
+      "format": "$,.5"}
+      },
+
+  "tooltip": [
+      {"field": "date", "type": "temporal", "title": "Date"},
+      {"field": "price", "type": "quantitative", "title": "Close Price", "format":"$,.5"}]
+
+}}
