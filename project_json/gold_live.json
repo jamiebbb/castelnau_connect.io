@@ -3,7 +3,7 @@
   "description": "A daily price chart for Gold in-line JSON",
   "title": {
     "text": "Gold: Live Price (USD)",
-    "subtitle":"Daily Gold (1 Troy Ounce) Price from December 1st to January 10th. Source: MetalsAPI",
+    "subtitle":"Daily Gold (1 Troy Ounce) Price from December 1st to January 9th. Source: MetalsAPI",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "start",
