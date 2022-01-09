@@ -25,12 +25,10 @@
 
   "height": 300,
   "width": "container",
-  
 
   "mark": {
     "type": "line",
     "interpolate": "monotone",
-    "tooltip": true,
     "color":"darkred"
   },
 
@@ -50,6 +48,11 @@
       "title": "",
       "axis": {
         "format":"$,.5"}
-        }
-     }
-}
+        },
+
+    "tooltip": [
+      {"field": "time_period_end", "type": "temporal", "title": "Date"},
+      {"field": "rate_close", "type": "quantitative", "title": "Close Price", "format":"$,.5"}]
+
+
+}}
