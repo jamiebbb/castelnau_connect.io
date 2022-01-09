@@ -5,7 +5,7 @@
 
    "title": {
     "text": "Bitcoin: Live Price (USD)",
-    "subtitle":"Daily Bitcoin Price from December 1st to January 10th. Source: CoinAPI",
+    "subtitle":"Daily Bitcoin Price from December 1st to January 9th. Source: CoinAPI",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "start",
@@ -19,7 +19,7 @@
  
   
   "data": {
-    "url": "https://rest.coinapi.io/v1/exchangerate/BTC/USD/history?apikey=5DA95036-5D9C-4FF9-8331-01C165D3F49F&period_id=1DAY&time_start=2021-12-01T00:00:00&time_end=2022-01-10T00:00:00&limit=100",
+    "url": "https://rest.coinapi.io/v1/exchangerate/BTC/USD/history?apikey=5DA95036-5D9C-4FF9-8331-01C165D3F49F&period_id=1DAY&time_start=2021-12-01T00:00:00&time_end=2022-01-09T00:00:00&limit=100",
     "format": {"type": "json"}},
   
 
