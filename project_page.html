@@ -6,7 +6,7 @@
 <head>
 
 <!-- Page title -->
-<title>Project Page: Is Bitcoin Digital Gold?</title>
+<title>Castelnau Connect</title>
 
 <!-- Making website mobile-first -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -21,24 +21,100 @@
 <link rel="stylesheet" href="index.css">
 
 <!---- Favicon ---->
-<link rel="icon" href="IMG_0549.jpg">
-<link rel="shortcut icon" href="IMG_0549.jpg" />
-<link rel="apple-touch-icon" href="IMG_0549.jpg" />
-           
+<link rel="icon" href="Favicon_32.ico">
+<link rel="shortcut icon" href="Favicon_32.ico" />
+<link rel="apple-touch-icon" href="Favicon_32.ico" />
+
+
+<--------------------- RENDER PDF IN BROWSER ---------------------->
+
+ <style>
+        #pdf-viewer {
+            width: 100%;
+            height: 100vh;
+            overflow: auto;
+        }
+        .pdf-page {
+            margin-bottom: 10px;
+        }
+    </style>
+
 </head>
 <!-- ///////////////////  END HEAD //////////////////////////////////// -->
 
 <!-- ///////////////////  START BODY //////////////////////////////////// -->
 <body>
 
+<div id="pdf-viewer"></div>
+
+    <script>
+        const url = 'data/Castelnau-Connect_Volume1_Q4-2023.pdf'; // Change this to the path of your PDF
+
+        let pdfDoc = null,
+            pageNum = 1,
+            pageRendering = false,
+            pageNumPending = null,
+            scale = 1.5,
+            canvas = document.createElement('canvas'),
+            ctx = canvas.getContext('2d');
+
+        document.getElementById('pdf-viewer').appendChild(canvas);
+
+        pdfjsLib.getDocument(url).promise.then(function(pdfDoc_) {
+            pdfDoc = pdfDoc_;
+            renderPage(pageNum);
+        });
+
+        function renderPage(num) {
+            pageRendering = true;
+
+            pdfDoc.getPage(num).then(function(page) {
+                const viewport = page.getViewport({ scale: scale });
+                canvas.height = viewport.height;
+                canvas.width = viewport.width;
+
+                const renderContext = {
+                    canvasContext: ctx,
+                    viewport: viewport
+                };
+                const renderTask = page.render(renderContext);
+
+                renderTask.promise.then(function() {
+                    pageRendering = false;
+
+                    if (pageNumPending !== null) {
+                        renderPage(pageNumPending);
+                        pageNumPending = null;
+                    }
+                });
+            });
+
+            document.addEventListener('scroll', trackPageTime);
+        }
+
+        function trackPageTime() {
+            // Implement your logic to track time spent on each page here
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+
+           
+
 <!--Page title-->
 <container class="hcontainer">
 <header>
 <div class="wrap">
-  <h1>Data<span style="color: #2400c7">Science: </span><span style="color: #298200">My Project</span></h1>
+  <h1><span style="color: #009725">Castelnau Connect</span></h1>
   <span style="display:block; height: 15px;"></span>
-    <h2>By Jamie Broadhurst<span style="color: #9200c7"</span></h2>
-  <p id="rubric" class="rubric">Project portfolio using data from: <a class="darkButton" href="https://www.coinapi.io/">CoinAPI</a>, <a class="darkButton" href="https://metals-api.com/">MetalsAPI</a> and <a class="darkButton" href="https://www.investing.com/">Investing.com</a>.</p>
+    <h2>By Castelnau Group<span style="color: #9200c7"</span></h2>
   <span style="display:block; height: 10px;"></span>
 </div>
 </header>
@@ -46,32 +122,18 @@
 
 <!--Navigation bar and buttons to other pages-->
 <div class="multi-button">
-  <button onclick="location.href='index.html'">Portfolio</button>
-  <button style="color: rgb(222, 151, 242);" onclick="location.href='project_page.html'">Project</button>
-  <button onclick="location.href='crypto_fun.html'">Crypto Dashboard</button>
-  <button onclick="location.href='https://github.com/jamiebbb/jamiebbb.github.io'">My Github</button>
+  <button onclick="location.href='index.html'">Home</button>
+  <button style="color: rgb(222, 151, 242);" onclick="location.href='project_page.html'">Castelnau Connect</button>
+  <button onclick="location.href='crypto_fun.html'">Podcasts</button>
+  <button onclick="location.href='https://www.castelnaugroup.com/'">Group Website</button>
 </div>
            
 <!--Project title with rainbow border -->     
-<h4>Can Bitcoin really be considered digital Gold? </h4>       
+<h4>A list of every edition of Castelnau Connect!</h4>       
            
-           
-<!-- 1) The aims of your project; -->     
-<container class="bcontainerwriteup">    
-<h3>
-          The aim of this project is to see whether Bitcoin can really be considered digital Gold. For this project to be a success, it is vital to define what digital Gold would look in a hypothetical state.
-<br> <br>
-          I believe this would be characterised by an asset that is of course digital, implying it is easy to transport and can be used via technology. 
-          More importantly, what is Gold? Gold is tangible and has been used as a medium of exchange for centuries. It has intrinsic value; this inherent value is derived from its scarcity.
-          Nowadays, due to its characteristics, it is considered an inflation hedge and a safe-haven asset as, over the years Gold has risen in value with the ever-rising cost of living. 
-          Therefore, my interpretation of Gold is an asset that is a secure, relatively predictable investment which is backed by physical bullions. These bullions will always have value as they can be melted down and used in jewellery, semiconductors, and even medicine, to name a few.
-</h3>
-</container>    
-           
-  
  <!--- Section 0: BTC live price since Dec 1st and Gold live price since Dec 1st (in-line JSON) --->           
-<p class="bodyText"><span style="color: rgb(219, 188, 188); font-weight: 1000;">Bitcoin and Gold:</span> Live Price</p>
-<container class="bcontainer">    
+<p class="bodyText"><span style="color: rgb(219, 188, 188); font-weight: 1000;">Castelnau Connect:</span> Volume 1</p>
+<container class="bcontainerwriteup">    
            
 <!--BTC Live price since Dec 1st -->
 <div class="chart" id="chart6">
@@ -89,141 +151,10 @@
   </script>
 </div>
 </container>       
-              <!------- END SECTION 0 ---------->
-           
 
-<!-- 2) The data you used and how you accessed it, including notes on automation and replication; -->     
-<container class="bcontainerwriteup">        
-<h3>
-           The data used throughout this project is from three data sources. I signed up for CoinAPI and MetalsAPI so I could access their respective API keys, for use in my live price charts. Bitcoin’s live price graph uses <a class="darkButton" href="https://rest.coinapi.io/v1/exchangerate/BTC/USD/history?apikey=AAB3A57B-7D91-4EA7-9C8C-6211E2F7CEDF&period_id1DAY&time_start=2021-12-01T00:00:00&time_end=2022-01-10T00:00:00&limit=100">data</a> from CoinAPI and will automatically update as the API link was included in the Vega specification. Whereas the live Gold price graph replicates <a class="darkButton" href="https://metals-api.com/api/timeseries?access_key=l7l8qq8917cannod4zqw1648f6c260mvbkix14zyv0pc91jeko0tftez2lc9&start_date=2021-12-01&end_date=2022-01-10&base=USD&symbols=XAU">data</a> from MetalsAPI and is written in-line JSON.
-<br> <br>
-           The rest of the graphs use data that I scraped using Python in Colab from investing.com. Using the investpy software library, I was able to access data for both Bitcoin and Gold. Utilising my Python script, most of the process is automated which means my graphs can be updated within a matter of minutes. I decided to use this website over Yahoo Finance as there was a larger dataset available for Bitcoin which goes back to August 2010 rather than September 2014.           
-</h3>
-</container>
-           
-           
- <!--- Section 1: BTC long run price vs Volume Traded --->           
-<p class="bodyText"><span style="color: rgb(219, 188, 188); font-weight: 1000;">Bitcoin:</span> Long Run Price and Volume since 2010</p>
-<container class="bcontainer">    
-           
- <!--BTC price chart from investing.com. Data cleaned in Python. Colab notebook saved in my GitHub repository -->
-<div class="chart" id="chart1">
-  <script>
-    var myChart1 = "project_json/btc_longrun.json";
-    vegaEmbed('#chart1', myChart1);
-  </script>
-</div>
-</container>
-   <!------- END SECTION 1 ---------->
-           
 
-   <!--- Section 2: Gold long run price vs Volume Traded --->           
-<p class="bodyText"><span style="color: rgb(219, 188, 188); font-weight: 1000;">Gold:</span> Long Run Price and Volume since 2010</p>
-<container class="bcontainer"> 
-           
- <!--Gold price chart from investing.com. Data cleaned in Python. --> 
-<div class="chart" id="chart2">
-  <script>
-    var myChart1 = "project_json/gold_longrun.json";
-    vegaEmbed('#chart2', myChart1);
-  </script>
-</div>
-</container>
-   <!------- END SECTION 2 ---------->
-           
-           
-   <!------- DESCRIPTION 1 FOR FIRST 4 GRAPHS ---------->    
-<container class="bcontainerwriteup">        
-<h3>
-           As evident from the first two graphs, we can see that even just over the past month Bitcoin’s price has been more volatile than Gold’s. This idea can be furthered if we look at Bitcoin and Gold’s long run price. Bitcoin’s price has risen from $0.1 to a peak of $65,459 on 14th November 2021. Whereas the price of Gold has fluctuated through a relatively small range of $960.46 over the past 11 years.    
-</h3>
-</container>
-           
-           
-   <!--- Section 3: BTC vs Gold Normalised Prices and Z-Score graph--->           
-<p class="bodyText"><span style="color: rgb(219, 188, 188); font-weight: 1000;">BTC vs Gold:</span> Normalised Prices and Z-Score Graph</p>
-<container class="bcontainer">   
-           
-    <!--Coded in Python - link to colab notebook here: https://colab.research.google.com/drive/1gijxGoskQoGSqWydVFLoHWBYs--MHWPl#scrollTo=d9CzCC37ay0x-->
-           
-    <!--Min-max normalisation, calculated in Python and edited in Vega, data from investing.com-->
-<div class="chart" id="chart3">
-  <script>
-    var myChart1 = "project_json/min-max.json";
-    vegaEmbed('#chart3', myChart1);
-  </script>
-</div>
-           
-  <div class="chart" id="chart4">
-  <script>
-    var myChart1 = "project_json/z-score.json";
-    vegaEmbed('#chart4', myChart1);
-  </script>
-</div>        
- </container>     
-   <!------- END SECTION 3 ---------->
-           
-           
-   <!------- DESCRIPTION 2 FOR MIN-MAX AND Z-SCORE GRAPHS ---------->    
-<container class="bcontainerwriteup">    
-<h3> 
-           Looking at the Min-Max and Z-Score graphs, it is evident that the two assets have followed similar price movements from 2018 to 2020, deviating in 2020, at the start of the Coronavirus pandemic, when lots of investors put money into the safe-haven asset – Gold. Through 2021, we can further see Bitcoin’s price volatility as it’s Z-Score swings over x4 that of Gold’s. 
-</h3>
-</container>
-           
-           
-<!-- 3) Challenges in data cleaning and analysis, and the tools you used to overcome them; -->     
-<container class="bcontainerwriteup">    
-<h3> 
-           The link to my Colab notebook for all my data analysis is available <a class="darkButton" href=" https://colab.research.google.com/drive/1gijxGoskQoGSqWydVFLoHWBYs--MHWPl">here.</a>  
-<br> <br>
-           The first challenge I had to overcome was that Gold doesn’t trade everyday like Bitcoin. So, when I merged the datasets into a Pandas DataFrame Bitcoin had far more observations. To overcome this, I took the weekly average of close prices for both assets from the daily dataset using the .resample() function in Python. 
-<br> <br>
-           Another challenge was with the output from MetalsAPI. I decided to replicate the data from the API link in-line JSON due to the output being incompatible for Vega manipulation. Instead, I manually created an array of data points within Vega. I also had to use a calculate function to convert the price of Gold into USD.   
-<br> <br>
-           I decided to export the data from Python for the Min-Max and Z-Score graphs to a .csv file so I could use the raw GitHub file within Vega. This was so my website looked more consistent throughout. Also, the .png files proved tricky to view nicely on a mobile.  
-<br> <br>
-           Throughout, I used the Vega documentation to troubleshoot issues with various problems I encountered; mostly with performing transforms such as filter and calculate.  
-</h3>
-</container>           
-           
 
-   <!--- Section 4: Linear Regression - BTC vs Gold --->          
-<p class="bodyText"><span style="color: rgb(219, 188, 188); font-weight: 1000;">Linear regression:</span> BTC vs Gold</p>
-<container class="bcontainer">    
            
-    <!--Linear regression: Data cleaned in Python and scraped from investing.com-->
-<div class="chart" id="chart5">
-  <script>
-    var myChart1 = "project_json/btc_gold_reg.json";
-    vegaEmbed('#chart5', myChart1);
-  </script>
-</div>
- </container>
-   <!------- END SECTION 4 ---------->
-           
-           
-   <!------- DESCRIPTION 3 FOR LINEAR REGRESSION ---------->    
-<container class="bcontainerwriteup">    
-<h3> 
-           The linear regression of Bitcoin against Gold shows an R-Squared value of 0.30 since 2010, suggesting that there is some correlation but, this doesn’t necessarily imply causation. The greatest R-Squared value is 0.53 over the period, 2015-2020, implying that when Bitcoin has a price above $1,000 there is greater correlation between the average weekly close price of the two assets. 
-</h3>
-</container>
-           
-           
-<!-- 4) Your conclusions; -->     
-<container class="bcontainerwriteup">    
-<h3> 
-          Overall, Bitcoin cannot be considered digital Gold since they don’t exhibit similar characteristics. Firstly, it isn’t tangible so lacks intrinsic value. Secondly, its price volatility is far greater than that of Gold. Yes, it is scarce since there is a fixed supply but it is not a secure, predictable store of value hence, it is a speculative asset. All things considered, it is a much risker investment than Gold. Although it has significantly outperformed Gold over the past 10 years, its value could drive to zero if there was an EMP attack on Earth’s technology. Then, only people with physical bullions would be able to successfully barter, rendering Bitcoin worthless. 
-<br> <br>
-          Note: Further analysis could be completed if intraday data was available for both assets. 
-</h3>
-</container>
-
-<p> 
-           <br> <br> <br>
-           Total word count - 837
-</p>
 
 <!--Footer, to add a buffer at the bottom of the page-->
 <footer>
